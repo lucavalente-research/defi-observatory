@@ -8,6 +8,10 @@ Over the last 30 days of a daily fee series, a day is **one-off** when
 Every other day is **recurring**. A one-off day counts in full. The recurring share is recurring fees divided by
 all fees of the 30 days.
 
+Some series are not daily in practice: fees settled once a week arrive in a few large days with almost nothing in
+between. Under the rule above those days are one-off even though they come back every week. Such series are marked
+``lumpy`` (at least 4 one-off days and a median day below 20% of the average day): read their split with care.
+
 This describes the last 30 days only. It does not say why a day stood out, and a high recurring share is not a
 promise that the fees will continue.
 """
@@ -21,6 +25,8 @@ from .peers import _back
 WINDOW_DAYS = 30
 MIN_DAYS = 27
 TIMES_THE_MEDIAN = 3.0
+LUMPY_MIN_DAYS = 4
+LUMPY_MEDIAN_OVER_MEAN = 0.2
 
 
 def recurring_share(series: Mapping[str, float], end_day: str, flagged_days: Iterable[str] = (),
@@ -30,7 +36,7 @@ def recurring_share(series: Mapping[str, float], end_day: str, flagged_days: Ite
     ``series`` maps ISO days to the fees of that day. ``flagged_days`` are days already flagged by
     :func:`defi_observatory.data_check.check_series`. At least 27 published days and a positive total are required.
 
-    Returns ``{"fees", "recurring", "one_off", "recurring_share", "median_day", "one_off_days"}``.
+    Returns ``{"fees", "recurring", "one_off", "recurring_share", "median_day", "one_off_days", "lumpy"}``.
 
     >>> import datetime as dt
     >>> days = [(dt.date(2026, 9, 30) - dt.timedelta(days=i)).isoformat() for i in range(30)]
@@ -65,4 +71,5 @@ def recurring_share(series: Mapping[str, float], end_day: str, flagged_days: Ite
                              "times_the_median": round(value / median, 2) if median > 0 else None})
     one_off = float(sum(x["value"] for x in one_off_days))
     return {"fees": total, "recurring": total - one_off, "one_off": one_off,
-            "recurring_share": round(1 - one_off / total, 4), "median_day": median, "one_off_days": one_off_days}
+            "recurring_share": round(1 - one_off / total, 4), "median_day": median, "one_off_days": one_off_days,
+            "lumpy": len(one_off_days) >= LUMPY_MIN_DAYS and median < LUMPY_MEDIAN_OVER_MEAN * total / len(days)}

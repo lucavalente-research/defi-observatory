@@ -139,7 +139,9 @@ Real cases in the tests, 30 days to 29 September 2026. Aave V2: $331,690 in fees
 day, so 45% recurring. Uniswap V4: $136.5M in fees, one day at 3.9 times the median day, 90% recurring.
 
 How to read it: the split describes the last 30 days. It does not say why a day stood out, and several strong days
-in a row are *not* one-off under this rule (a sustained rise is recurring).
+in a row are *not* one-off under this rule (a sustained rise is recurring). Fees settled once a week arrive in a
+few large days and look one-off although they return every week: those series are marked `lumpy` (`paid_in_lumps`
+in the data file) and their split should not be quoted as is.
 
 ### 6. Concentration (`defi_observatory.concentration`)
 

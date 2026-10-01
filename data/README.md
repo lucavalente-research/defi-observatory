@@ -20,9 +20,10 @@ isolated_drops, revisions, flagged_days`
 
 ## fee_quality_<date>.csv (weekly)
 `date, protocol_id, protocol, sector, fees_through, fees_30d_usd, recurring_usd, one_off_usd, recurring_share,
-one_off_days`
+one_off_days, paid_in_lumps`
 A day is one-off when it was flagged by the data check or is above 3 times the median day of the 30 days ending on
-`fees_through`. `one_off_days` lists those days.
+`fees_through`. `one_off_days` lists those days. `paid_in_lumps` = 1 when the fees arrive in a few large days (for
+example a weekly settlement): the split is not meaningful there.
 
 ## concentration_<date>.csv (weekly)
 `date, protocol_id, protocol, sector, value_locked_usd, chains, hhi_value_locked_by_chain, largest_chain,

@@ -228,3 +228,13 @@ def test_lending_summary_ignores_small_and_frozen_markets():
                {"deposits_usd": 5e6, "borrowed_usd": 4.9e6}, {"deposits_usd": 30e6, "borrowed_usd": 27e6}]
     out = lending.summarize(markets)
     assert out["large_markets"] == 2 and out["highlighted"] == 1       # exactly 90% is not above 90%
+
+
+def test_fee_quality_marks_weekly_settlements_as_lumpy():
+    from defi_observatory import fee_quality
+    s = _thirty_days(1.0)
+    for day in ("2026-09-03", "2026-09-10", "2026-09-17", "2026-09-24"):
+        s[day] = 5000.0
+    out = fee_quality.recurring_share(s, "2026-09-30")
+    assert out["lumpy"] and len(out["one_off_days"]) == 4
+    assert not fee_quality.recurring_share(_thirty_days(), "2026-09-30")["lumpy"]
