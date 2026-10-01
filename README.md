@@ -161,4 +161,8 @@ aggregated figures.
 
 ## License
 
-Code: MIT (see `LICENSE`). Author: Luca Valente.
+Code: MIT (see `LICENSE`).
+
+Daily data in `data/`: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) – free to reuse with attribution ("Luca Valente, defi-observatory") and the attribution of the original sources listed above; not for commercial resale. The non-commercial clause follows from growthepie's CC BY-NC 4.0 terms, one of the inputs.
+
+Author: Luca Valente.
