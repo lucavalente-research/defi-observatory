@@ -2,7 +2,7 @@
 
 Small, documented methods for reading public DeFi data, plus the daily numbers they produce.
 
-The code answers seven plain questions about a protocol:
+The code answers eight plain questions about a protocol:
 
 1. **Is it moving differently from its peers?** – `peers`
 2. **Can the number be trusted?** – `data_check`
@@ -11,6 +11,7 @@ The code answers seven plain questions about a protocol:
 5. **Are its fees earned every day, or on a few one-off days?** – `fee_quality`
 6. **How much does it depend on one chain, or on a few days?** – `concentration`
 7. **How much of the deposits in a lending market is lent out?** – `lending`
+8. **What followed an event, compared with the rest of the sector?** – `event_study`
 
 Everything here describes what the data already shows. Nothing in this repository is a forecast, a signal or
 investment advice.
@@ -25,7 +26,7 @@ pytest
 python examples/quick_tour.py
 ```
 
-No dependencies besides the Python standard library (3.9+). The tests run on small made-up data and on seven real
+No dependencies besides the Python standard library (3.9+). The tests run on small made-up data and on nine real
 cases saved in `tests/fixtures/`.
 
 ## What each part measures, and how to read it
@@ -183,6 +184,37 @@ were above 90%.
 How to read it: this is one moment in time, and utilization moves minute by minute. Interest-rate models are built
 to keep utilization near a set level (Morpho's is built around 90%), so a market near that level is where its
 design puts it. Nothing here says what happens next.
+
+### 8. Event study (`defi_observatory.event_study`)
+
+For one event and one measure, the change after the event is compared with the median change of sector peers over
+the same days: a move shared by the whole sector does not count. Levels (value locked, token price against BTC)
+compare the value *h* days later with the median of the 5 days before; flows (fees, transactions) compare the daily
+average after with the average of the 7 days before. For a type of event the effects are averaged, with a 90%
+interval from 2,000 bootstrap resamples of the events. Below 15 events no average is given.
+
+```python
+from defi_observatory import event_study
+
+one = event_study.effect_against_peers(value_locked, peers_value_locked, event_day="2026-09-23", horizon=7)
+one["change"], one["peer_median"], one["effect"]
+event_study.event_study(effects_of_many_events)      # {'events': ..., 'mean': ..., 'low': ..., 'high': ...}
+```
+
+Real cases in the tests. Across 19 security incidents (2020–2026, protocols above $50M) value locked was 9.1 points
+below sector peers one day later, with a 90% interval from −14.9 to −4.2; 30 days later the gap was −9.9 points
+(−17.9 to −3.7, 18 events). Uniswap after a governance vote on 23 September 2026: +5.4% in seven days, peers
++5.9%, a gap of half a point.
+
+How to read it, and its limits:
+
+- **Correlation is not cause.** The method describes what happened in the same period. Other things happen on the
+  same days, and the event list holds only what was publicly recorded.
+- **Survivors only.** Protocols that disappeared after an incident are not in today's list, so the average
+  understates what incidents can do.
+- **Events are not independent.** Several events of one protocol, or several protocols hit on the same day, count as
+  separate events; the interval is therefore narrower than it should be.
+- **Peers are a blunt control.** The median of the sector removes market-wide moves, not everything else.
 
 ## Limits – what this does not tell you
 

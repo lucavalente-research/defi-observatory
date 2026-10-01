@@ -5,7 +5,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))   # works without installing
 
-from defi_observatory import concentration, data_check, decomposition, fee_quality, lending, peers
+from defi_observatory import concentration, data_check, decomposition, event_study, fee_quality, lending, peers
 
 HERE = os.path.join(os.path.dirname(__file__), "..", "tests", "fixtures")
 
@@ -45,3 +45,8 @@ case = json.load(open(os.path.join(HERE, "lending_snapshot.json")))
 out = lending.summarize(case["markets"])
 print("Lending, sixteen large Aave v3 and Morpho markets at %s: %d above 90%% of deposits lent out"
       % (case["snapshot_utc"], out["highlighted"]))
+
+case = json.load(open(os.path.join(HERE, "incident_effects.json")))
+out = event_study.event_study([e["effects"]["30"] for e in case["events"]])
+print("Event study, %d security incidents: value locked %+.1f points against peers 30 days later (90%% interval %+.1f to "
+      "%+.1f). Same period, not proven cause." % (out["events"], 100 * out["mean"], 100 * out["low"], 100 * out["high"]))

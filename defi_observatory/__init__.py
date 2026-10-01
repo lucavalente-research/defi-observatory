@@ -1,6 +1,6 @@
 """defi-observatory: small, documented methods for reading public DeFi data.
 
-Seven building blocks:
+Eight building blocks:
 
 * ``peers``          – a protocol's 30-day change against the median of its peer group
 * ``data_check``     – gaps, isolated one-day spikes and drops, revisions, and a 0-100 cleanliness figure
@@ -9,9 +9,11 @@ Seven building blocks:
 * ``fee_quality``    – the share of 30-day fees that is recurring, and the share that comes from one-off days
 * ``concentration``  – how much a protocol depends on a few chains or a few days (Herfindahl index)
 * ``lending``        – share of deposits lent out per lending market, with the markets above 90% highlighted
+* ``event_study``    – what followed a type of event, against sector peers, with a bootstrap interval
 
 Everything here describes what already happened in the data. Nothing is a forecast or advice.
 """
-from . import concentration, data_check, decomposition, fee_quality, health_index, lending, peers  # noqa: F401
+from . import (concentration, data_check, decomposition, event_study, fee_quality, health_index, lending,  # noqa: F401
+               peers)
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"

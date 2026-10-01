@@ -4,7 +4,8 @@ import os
 
 import pytest
 
-from defi_observatory import concentration, data_check, decomposition, fee_quality, health_index, lending, peers
+from defi_observatory import (concentration, data_check, decomposition, event_study, fee_quality, health_index, lending,
+                              peers)
 
 HERE = os.path.join(os.path.dirname(__file__), "fixtures")
 
@@ -99,3 +100,23 @@ def test_lending_snapshot_aave_v3_and_morpho_1_october_2026():
     assert out["large_markets"] == exp["large_markets"] and out["highlighted"] == exp["highlighted"]
     assert ["%s %s" % (m["market"], m["asset"]) for m in out["highlighted_markets"]] == exp["highlighted_names"]
     assert all(m["utilization"] > 0.9 and m["deposits_usd"] >= 10e6 for m in out["highlighted_markets"])
+
+
+def test_event_study_security_incidents_2020_to_2026():
+    case = load("incident_effects.json")
+    for horizon, exp in case["expected"].items():
+        out = event_study.event_study([e["effects"][horizon] for e in case["events"]])
+        assert out["status"] == "measured" and out["events"] == exp["events"]
+        assert round(out["mean"], 5) == exp["mean"]
+        assert round(out["low"], 5) == exp["low"] and round(out["high"], 5) == exp["high"]
+        assert out["high"] < 0                 # value locked fell against peers: the interval stays below zero
+
+
+def test_event_effect_uniswap_governance_vote_23_september_2026():
+    case = load("uniswap_vote.json")
+    exp = case["expected"]
+    out = event_study.effect_against_peers(case["series"], case["peer_series"], case["event_day"], case["horizon"])
+    assert out["peers"] == exp["peers"]
+    assert round(out["change"], 4) == exp["change"] and round(out["peer_median"], 4) == exp["peer_median"]
+    assert round(out["effect"], 4) == exp["effect"]
+    assert abs(out["effect"]) < 0.01           # the protocol moved with its sector

@@ -238,3 +238,50 @@ def test_fee_quality_marks_weekly_settlements_as_lumpy():
     out = fee_quality.recurring_share(s, "2026-09-30")
     assert out["lumpy"] and len(out["one_off_days"]) == 4
     assert not fee_quality.recurring_share(_thirty_days(), "2026-09-30")["lumpy"]
+
+
+# ---------------------------------------------------------------- event study
+def _flat(value, days=40, end=(2026, 9, 30)):
+    import datetime as dt
+    return {(dt.date(*end) - dt.timedelta(days=i)).isoformat(): value for i in range(days)}
+
+
+def test_event_change_level_uses_the_median_of_the_five_days_before():
+    from defi_observatory import event_study
+    s = _flat(100.0)
+    s["2026-09-09"] = 5.0                      # one odd day just before the event does not move the base
+    s["2026-09-17"] = 120.0
+    assert round(event_study.change_after(s, "2026-09-10", 7), 4) == 0.2
+    assert event_study.change_after(s, "2026-09-29", 7) is None        # the day after is not there yet
+
+
+def test_event_change_flow_compares_daily_averages():
+    from defi_observatory import event_study
+    s = _flat(10.0)
+    for day in ("2026-09-11", "2026-09-12", "2026-09-13"):
+        s[day] = 20.0
+    assert round(event_study.change_after(s, "2026-09-10", 1, level=False), 4) == 1.0
+    assert round(event_study.change_after(s, "2026-09-10", 7, level=False), 4) == round((3 * 20 + 4 * 10) / 7 / 10 - 1, 4)
+
+
+def test_event_effect_subtracts_the_peer_median_and_needs_five_peers():
+    from defi_observatory import event_study
+    own = _flat(100.0)
+    own["2026-09-17"] = 90.0
+    peers = []
+    for k in range(5):
+        p = _flat(100.0)
+        p["2026-09-17"] = 95.0
+        peers.append(p)
+    out = event_study.effect_against_peers(own, peers, "2026-09-10", 7)
+    assert round(out["change"], 4) == -0.1 and round(out["peer_median"], 4) == -0.05 and round(out["effect"], 4) == -0.05
+    assert event_study.effect_against_peers(own, peers[:4], "2026-09-10", 7) is None
+
+
+def test_event_study_sample_too_small_and_interval_brackets_the_mean():
+    from defi_observatory import event_study
+    assert event_study.event_study([0.1] * 14 + [None])["status"] == "sample too small"
+    effects = [(-1) ** k * 0.01 * k for k in range(1, 31)]
+    out = event_study.event_study(effects)
+    assert out["status"] == "measured" and out["low"] <= out["mean"] <= out["high"] and out["includes_zero"]
+    assert event_study.event_study(effects) == out                      # fixed seed: same interval every run
