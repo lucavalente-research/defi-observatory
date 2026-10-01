@@ -170,3 +170,61 @@ def test_a_measure_counts_only_if_five_members_have_it():
     g = {n: {"fees_on_value": i, "token_vs_btc": i, "data_cleanliness": i} for i, n in enumerate("abcdef")}
     g["a"]["transactions"] = 5.0
     assert health_index.health_index(g)["a"]["measures"] == 3
+
+
+# ---------------------------------------------------------------- fee quality, concentration, lending
+def _thirty_days(value=100.0, end=(2026, 9, 30)):
+    import datetime as dt
+    return {(dt.date(*end) - dt.timedelta(days=i)).isoformat(): value for i in range(30)}
+
+
+def test_fee_quality_all_recurring_when_every_day_is_alike():
+    from defi_observatory import fee_quality
+    out = fee_quality.recurring_share(_thirty_days(), "2026-09-30")
+    assert out["recurring_share"] == 1.0 and out["one_off_days"] == []
+
+
+def test_fee_quality_counts_a_flagged_day_even_below_three_times_the_median():
+    from defi_observatory import fee_quality
+    s = _thirty_days()
+    s["2026-09-20"] = 250.0
+    assert fee_quality.recurring_share(s, "2026-09-30")["one_off"] == 0.0
+    out = fee_quality.recurring_share(s, "2026-09-30", flagged_days=["2026-09-20"])
+    assert out["one_off"] == 250.0 and out["one_off_days"][0]["reason"] == "flagged by the data check"
+
+
+def test_fee_quality_needs_27_days_and_some_fees():
+    import pytest
+    from defi_observatory import fee_quality
+    s = _thirty_days()
+    for day in list(s)[:5]:
+        del s[day]
+    with pytest.raises(ValueError):
+        fee_quality.recurring_share(s, "2026-09-30")
+    with pytest.raises(ValueError):
+        fee_quality.recurring_share(_thirty_days(0.0), "2026-09-30")
+
+
+def test_herfindahl_bounds_and_normalisation():
+    from defi_observatory import concentration
+    assert concentration.herfindahl([1, 1, 1, 1]) == 0.25
+    assert concentration.herfindahl([5]) == 1.0
+    assert concentration.herfindahl([0, 0]) is None
+    assert concentration.normalized(0.25, 4) == 0.0
+    assert concentration.normalized(None, 4) is None and concentration.normalized(1.0, 1) is None
+
+
+def test_concentration_by_day_one_day_holds_everything():
+    from defi_observatory import concentration
+    s = _thirty_days(0.0)
+    s["2026-09-12"] = 500.0
+    out = concentration.by_day(s, "2026-09-30")
+    assert out["index"] == 1.0 and out["index_normalized"] == 1.0 and out["largest_day"] == "2026-09-12"
+
+
+def test_lending_summary_ignores_small_and_frozen_markets():
+    from defi_observatory import lending
+    markets = [{"deposits_usd": 20e6, "borrowed_usd": 19e6}, {"deposits_usd": 20e6, "borrowed_usd": 19e6, "frozen": True},
+               {"deposits_usd": 5e6, "borrowed_usd": 4.9e6}, {"deposits_usd": 30e6, "borrowed_usd": 27e6}]
+    out = lending.summarize(markets)
+    assert out["large_markets"] == 2 and out["highlighted"] == 1       # exactly 90% is not above 90%

@@ -1,0 +1,204 @@
+{
+ "source": "Aave v3 and Morpho public APIs, snapshot of 2026-10-01T21:19:20Z: the eight largest markets of each (deposits above $10M) and two small ones",
+ "snapshot_utc": "2026-10-01T21:19:20Z",
+ "markets": [
+  {
+   "protocol": "Aave v3",
+   "market": "Ethereum",
+   "chain": "Ethereum",
+   "asset": "WETH",
+   "deposits_usd": 5659370291,
+   "borrowed_usd": 4762388697,
+   "utilization": 0.8633,
+   "frozen": false
+  },
+  {
+   "protocol": "Aave v3",
+   "market": "Ethereum",
+   "chain": "Ethereum",
+   "asset": "weETH",
+   "deposits_usd": 4104416288,
+   "borrowed_usd": 151844,
+   "utilization": 0.0,
+   "frozen": false
+  },
+  {
+   "protocol": "Aave v3",
+   "market": "Ethereum",
+   "chain": "Ethereum",
+   "asset": "WBTC",
+   "deposits_usd": 2914462866,
+   "borrowed_usd": 61459604,
+   "utilization": 0.0211,
+   "frozen": false
+  },
+  {
+   "protocol": "Aave v3",
+   "market": "Ethereum",
+   "chain": "Ethereum",
+   "asset": "USDT",
+   "deposits_usd": 2849144451,
+   "borrowed_usd": 2666615235,
+   "utilization": 0.9359,
+   "frozen": false
+  },
+  {
+   "protocol": "Aave v3",
+   "market": "Ethereum",
+   "chain": "Ethereum",
+   "asset": "wstETH",
+   "deposits_usd": 2684812094,
+   "borrowed_usd": 63746321,
+   "utilization": 0.0237,
+   "frozen": false
+  },
+  {
+   "protocol": "Aave v3",
+   "market": "Ethereum",
+   "chain": "Ethereum",
+   "asset": "USDC",
+   "deposits_usd": 2414436532,
+   "borrowed_usd": 2269787156,
+   "utilization": 0.9401,
+   "frozen": false
+  },
+  {
+   "protocol": "Aave v3",
+   "market": "Ethereum",
+   "chain": "Ethereum",
+   "asset": "cbBTC",
+   "deposits_usd": 1489386645,
+   "borrowed_usd": 10989100,
+   "utilization": 0.0074,
+   "frozen": false
+  },
+  {
+   "protocol": "Aave v3",
+   "market": "Plasma",
+   "chain": "Plasma",
+   "asset": "USDT0",
+   "deposits_usd": 759647056,
+   "borrowed_usd": 718281830,
+   "utilization": 0.9455,
+   "frozen": false
+  },
+  {
+   "protocol": "Morpho",
+   "market": "cbBTC / USDC",
+   "chain": "Base",
+   "asset": "USDC",
+   "deposits_usd": 1672082748,
+   "borrowed_usd": 1505896443,
+   "utilization": 0.9006,
+   "frozen": false
+  },
+  {
+   "protocol": "Morpho",
+   "market": "USDe / USDC",
+   "chain": "Base",
+   "asset": "USDC",
+   "deposits_usd": 389890594,
+   "borrowed_usd": 351529998,
+   "utilization": 0.9016,
+   "frozen": false
+  },
+  {
+   "protocol": "Morpho",
+   "market": "USDe / USDG",
+   "chain": "Robinhood Chain",
+   "asset": "USDG",
+   "deposits_usd": 343729078,
+   "borrowed_usd": 305549437,
+   "utilization": 0.8889,
+   "frozen": false
+  },
+  {
+   "protocol": "Morpho",
+   "market": "cbBTC / USDC",
+   "chain": "Ethereum",
+   "asset": "USDC",
+   "deposits_usd": 338069744,
+   "borrowed_usd": 304823761,
+   "utilization": 0.9017,
+   "frozen": false
+  },
+  {
+   "protocol": "Morpho",
+   "market": "kBTC / RLUSD",
+   "chain": "Ethereum",
+   "asset": "RLUSD",
+   "deposits_usd": 219989273,
+   "borrowed_usd": 194392815,
+   "utilization": 0.8836,
+   "frozen": false
+  },
+  {
+   "protocol": "Morpho",
+   "market": "PRIME / PYUSD",
+   "chain": "Ethereum",
+   "asset": "PYUSD",
+   "deposits_usd": 209969384,
+   "borrowed_usd": 189691249,
+   "utilization": 0.9034,
+   "frozen": false
+  },
+  {
+   "protocol": "Morpho",
+   "market": "cirBTC / USDC",
+   "chain": "Arc",
+   "asset": "USDC",
+   "deposits_usd": 189800816,
+   "borrowed_usd": 187117261,
+   "utilization": 0.9859,
+   "frozen": false
+  },
+  {
+   "protocol": "Morpho",
+   "market": "kBTC / PYUSD",
+   "chain": "Ethereum",
+   "asset": "PYUSD",
+   "deposits_usd": 162007529,
+   "borrowed_usd": 145551002,
+   "utilization": 0.8984,
+   "frozen": false
+  },
+  {
+   "protocol": "Morpho",
+   "market": "kHYPE / USDC",
+   "chain": "HyperEVM",
+   "asset": "USDC",
+   "deposits_usd": 9778344,
+   "borrowed_usd": 7860903,
+   "utilization": 0.8039,
+   "frozen": false
+  },
+  {
+   "protocol": "Morpho",
+   "market": "wstETH / EURCV",
+   "chain": "Ethereum",
+   "asset": "EURCV",
+   "deposits_usd": 9688522,
+   "borrowed_usd": 8725983,
+   "utilization": 0.9007,
+   "frozen": false
+  }
+ ],
+ "expected": {
+  "large_markets": 16,
+  "highlighted": 8,
+  "highlighted_names": [
+   "Ethereum USDT",
+   "Ethereum USDC",
+   "cbBTC / USDC USDC",
+   "Plasma USDT0",
+   "USDe / USDC USDC",
+   "cbBTC / USDC USDC",
+   "PRIME / PYUSD PYUSD",
+   "cirBTC / USDC USDC"
+  ],
+  "all_markets_in_the_snapshot": {
+   "large_markets": 146,
+   "highlighted": 35
+  }
+ }
+}

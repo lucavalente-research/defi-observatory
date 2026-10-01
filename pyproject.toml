@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "defi-observatory"
-version = "0.1.0"
+version = "0.2.0"
 description = "Small, documented methods for reading public DeFi data: peer comparison, data check, price/flow decomposition, health index."
 readme = "README.md"
 license = {text = "MIT"}

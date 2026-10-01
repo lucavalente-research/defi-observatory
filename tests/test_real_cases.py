@@ -1,10 +1,10 @@
-"""Four real cases saved as small fixtures: the library must give the numbers the nightly observatory published."""
+"""Real cases saved as small fixtures: the library must give the numbers the nightly observatory published."""
 import json
 import os
 
 import pytest
 
-from defi_observatory import data_check, decomposition, health_index, peers
+from defi_observatory import concentration, data_check, decomposition, fee_quality, health_index, lending, peers
 
 HERE = os.path.join(os.path.dirname(__file__), "fixtures")
 
@@ -60,3 +60,42 @@ def test_health_index_collateralised_debt_group_30_september_2026():
     for name, exp in case["expected"].items():
         assert out[name]["index"] == exp["index"], name
         assert out[name]["measures"] == exp["measures"], name
+
+
+def test_fee_quality_uniswap_v4_and_aave_v2_september_2026():
+    case = load("fee_quality_cases.json")
+    uni = case["uniswap_v4"]
+    out = fee_quality.recurring_share(uni["series"], case["end_day"], uni["flagged_days"])
+    assert out["fees"] == uni["expected"]["fees"] and out["one_off"] == uni["expected"]["one_off"]
+    assert out["recurring_share"] == uni["expected"]["recurring_share"]
+    assert [x["day"] for x in out["one_off_days"]] == uni["expected"]["one_off_days"]
+    # Aave V2: the day flagged by the data check (14 September) is more than half of the month's fees
+    aave = case["aave_v2"]
+    out = fee_quality.recurring_share(load("aave_v2_fees.json")["series"], case["end_day"], aave["flagged_days"])
+    assert out["fees"] == aave["expected"]["fees"] and out["one_off"] == aave["expected"]["one_off"]
+    assert out["recurring_share"] == aave["expected"]["recurring_share"] < 0.5
+    assert [x["day"] for x in out["one_off_days"]] == aave["expected"]["one_off_days"]
+
+
+def test_concentration_morpho_blue_chains_and_ethena_fee_days_september_2026():
+    case = load("concentration_cases.json")
+    exp = case["expected"]
+    out = concentration.by_chain(case["value_locked_by_chain"])
+    assert round(out["index"], 4) == exp["index"] and out["chains"] == exp["chains"]
+    assert out["largest_chain"] == exp["largest_chain"]
+    assert round(out["largest_chain_share"], 4) == exp["largest_chain_share"]
+    exp = case["expected_fees"]
+    out = concentration.by_day(case["ethena_usde_fees"], case["fees_end_day"])
+    assert round(out["index"], 4) == exp["index"] and round(out["index_normalized"], 4) == exp["index_normalized"]
+    assert out["largest_day"] == exp["largest_day"]
+    assert round(out["largest_day_share"], 4) == exp["largest_day_share"]
+    assert round(out["three_largest_days_share"], 4) == exp["three_largest_days_share"]
+
+
+def test_lending_snapshot_aave_v3_and_morpho_1_october_2026():
+    case = load("lending_snapshot.json")
+    exp = case["expected"]
+    out = lending.summarize(case["markets"])
+    assert out["large_markets"] == exp["large_markets"] and out["highlighted"] == exp["highlighted"]
+    assert ["%s %s" % (m["market"], m["asset"]) for m in out["highlighted_markets"]] == exp["highlighted_names"]
+    assert all(m["utilization"] > 0.9 and m["deposits_usd"] >= 10e6 for m in out["highlighted_markets"])

@@ -5,7 +5,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))   # works without installing
 
-from defi_observatory import data_check, decomposition, peers
+from defi_observatory import concentration, data_check, decomposition, fee_quality, lending, peers
 
 HERE = os.path.join(os.path.dirname(__file__), "..", "tests", "fixtures")
 
@@ -29,3 +29,19 @@ case = json.load(open(os.path.join(HERE, "dex_fee_changes.json")))
 row = peers.compare_with_peers(case["changes"])[case["member"]]
 print("Peer comparison, Raydium fees: %+.0f%% against a median of %+.0f%% across %d exchanges"
       % (100 * row["change"], 100 * row["peer_median"], row["peers"]))
+
+case = json.load(open(os.path.join(HERE, "fee_quality_cases.json")))
+aave = json.load(open(os.path.join(HERE, "aave_v2_fees.json")))["series"]
+out = fee_quality.recurring_share(aave, case["end_day"], case["aave_v2"]["flagged_days"])
+print("Fee quality, Aave V2: $%s of fees in 30 days, %.0f%% recurring (one day holds the rest)"
+      % (format(round(out["fees"]), ","), 100 * out["recurring_share"]))
+
+case = json.load(open(os.path.join(HERE, "concentration_cases.json")))
+out = concentration.by_chain(case["value_locked_by_chain"])
+print("Concentration, Morpho Blue: %d chains, %.0f%% on %s, index %.2f (like %.1f equal chains)"
+      % (out["chains"], 100 * out["largest_chain_share"], out["largest_chain"], out["index"], out["equivalent_chains"]))
+
+case = json.load(open(os.path.join(HERE, "lending_snapshot.json")))
+out = lending.summarize(case["markets"])
+print("Lending, sixteen large Aave v3 and Morpho markets at %s: %d above 90%% of deposits lent out"
+      % (case["snapshot_utc"], out["highlighted"]))

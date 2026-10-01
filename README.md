@@ -2,12 +2,15 @@
 
 Small, documented methods for reading public DeFi data, plus the daily numbers they produce.
 
-The code answers four plain questions about a protocol:
+The code answers seven plain questions about a protocol:
 
 1. **Is it moving differently from its peers?** – `peers`
 2. **Can the number be trusted?** – `data_check`
 3. **Did value locked grow because of prices or because of deposits?** – `decomposition`
 4. **Where does it stand in its own sector, on five measures at once?** – `health_index`
+5. **Are its fees earned every day, or on a few one-off days?** – `fee_quality`
+6. **How much does it depend on one chain, or on a few days?** – `concentration`
+7. **How much of the deposits in a lending market is lent out?** – `lending`
 
 Everything here describes what the data already shows. Nothing in this repository is a forecast, a signal or
 investment advice.
@@ -22,7 +25,7 @@ pytest
 python examples/quick_tour.py
 ```
 
-No dependencies besides the Python standard library (3.9+). The tests run on small made-up data and on four real
+No dependencies besides the Python standard library (3.9+). The tests run on small made-up data and on seven real
 cases saved in `tests/fixtures/`.
 
 ## What each part measures, and how to read it
@@ -119,6 +122,66 @@ health_index.health_index(group)["p1"]      # {'index': ..., 'measures': 3, 'ran
 How to read it: 90 means "near the top of its own sector on most measures", not "90% healthy". Group medians sit
 near 50 by construction, so sectors cannot be compared with each other through this index.
 
+### 5. Fee quality (`defi_observatory.fee_quality`)
+
+Two protocols can show the same 30-day fees while one earns them every day and the other earned most of them in an
+afternoon. Over the last 30 days a day is **one-off** when it was flagged by the data check, or when it is more than
+3 times the protocol's median day. Everything else is **recurring**; a one-off day counts in full.
+
+```python
+from defi_observatory import fee_quality
+
+out = fee_quality.recurring_share(daily_fees, end_day="2026-09-29", flagged_days=["2026-09-14"])
+out["recurring_share"], out["one_off_days"]
+```
+
+Real cases in the tests, 30 days to 29 September 2026. Aave V2: $331,690 in fees, of which $182,683 on one flagged
+day, so 45% recurring. Uniswap V4: $136.5M in fees, one day at 3.9 times the median day, 90% recurring.
+
+How to read it: the split describes the last 30 days. It does not say why a day stood out, and several strong days
+in a row are *not* one-off under this rule (a sustained rise is recurring).
+
+### 6. Concentration (`defi_observatory.concentration`)
+
+The Herfindahl index is the sum of the squared shares: near 0 when the total is spread evenly, 1 when it all sits in
+one place. `1 / index` reads as "the number of equal parts that would look the same". It is applied to value locked
+by chain and to fees by day; for days it is also rescaled so that 0 means the same amount every day.
+
+```python
+from defi_observatory import concentration
+
+concentration.by_chain({"Ethereum": 800.0, "Base": 150.0, "Arbitrum": 50.0})
+# {'index': 0.665, 'chains': 3, 'largest_chain': 'Ethereum', 'largest_chain_share': 0.8, ...}
+concentration.by_day(daily_fees, end_day="2026-09-29")
+```
+
+Real cases in the tests. Morpho Blue on 30 September 2026: 38 chains, 46% of value locked on Ethereum, index 0.38
+(the same as 2.7 equal chains). Ethena USDe fees in the 30 days to 29 September: the three largest days were 68% of
+the total.
+
+How to read it: a high index is a description, not a verdict. A protocol built for one chain is concentrated by
+design. Volume by trading pair is not covered: the sources used here do not publish it as a daily series.
+
+### 7. Lending markets (`defi_observatory.lending`)
+
+For each market of a lending protocol: deposits, borrowed amount, available liquidity and the two interest rates, as
+the protocol publishes them. **Utilization** is borrowed divided by deposits. A market is highlighted when
+utilization is above 90%, deposits are at least $10M and the market is not frozen.
+
+```python
+from defi_observatory import lending
+
+lending.summarize([{"deposits_usd": 50e6, "borrowed_usd": 47e6}, {"deposits_usd": 80e6, "borrowed_usd": 40e6}])
+# {'large_markets': 2, 'highlighted': 1, 'utilization_of_large_markets': 0.6692, ...}
+```
+
+Real case in the tests: a snapshot of Aave v3 and Morpho taken on 1 October 2026. Of 146 markets above $10M, 35
+were above 90%.
+
+How to read it: this is one moment in time, and utilization moves minute by minute. Interest-rate models are built
+to keep utilization near a set level (Morpho's is built around 90%), so a market near that level is where its
+design puts it. Nothing here says what happens next.
+
 ## Limits – what this does not tell you
 
 - It does not predict anything and it does not recommend anything.
@@ -139,6 +202,9 @@ Aggregated results only – no raw copy of any source. See [`data/README.md`](da
 | `health_index_<date>.csv` | health index and the five ranks, protocols above $50M in value locked with 90 days of history |
 | `real_money_<date>.csv` | 30-day change in value locked split into price effect and net deposits |
 | `data_check_<date>.csv` | cleanliness and counts of flagged days per protocol and measure |
+| `fee_quality_<date>.csv` | weekly: 30-day fees split into recurring and one-off |
+| `concentration_<date>.csv` | weekly: concentration of value locked by chain and of fees by day |
+| `lending_stress_<date>.csv` | weekly: utilization, rates and available liquidity per Aave v3 and Morpho market |
 | `*_latest.csv` | the most recent of each |
 
 Before the files are written, a sample of the night's numbers is downloaded again from the original source and
@@ -155,6 +221,8 @@ The methods are source-agnostic. The daily data is computed from:
 | [Binance](https://www.binance.com) | perpetual futures funding and open interest | public market-data API terms |
 | [GitHub](https://github.com) | commit counts of public repositories | GitHub REST API terms |
 | [growthepie](https://www.growthepie.xyz) | layer-2 transactions and economics | CC BY-NC 4.0; attribution required |
+| [Aave](https://aave.com) | lending markets of Aave v3 (official public API) | see the provider's terms |
+| [Morpho](https://morpho.org) | lending markets of Morpho (official public API) | see the provider's terms |
 
 Check each provider's current terms before reusing their data. This repository redistributes only derived,
 aggregated figures.

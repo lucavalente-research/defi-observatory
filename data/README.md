@@ -17,3 +17,20 @@ price_effect, net_deposits_effect, residual`
 `date, protocol_id, protocol, sector, measure, cleanliness_0_100, days_checked, gaps, isolated_spikes,
 isolated_drops, revisions, flagged_days`
 `flagged_days` lists isolated spikes and drops as `day:times_the_median`.
+
+## fee_quality_<date>.csv (weekly)
+`date, protocol_id, protocol, sector, fees_through, fees_30d_usd, recurring_usd, one_off_usd, recurring_share,
+one_off_days`
+A day is one-off when it was flagged by the data check or is above 3 times the median day of the 30 days ending on
+`fees_through`. `one_off_days` lists those days.
+
+## concentration_<date>.csv (weekly)
+`date, protocol_id, protocol, sector, value_locked_usd, chains, hhi_value_locked_by_chain, largest_chain,
+largest_chain_share, hhi_fees_by_day, hhi_fees_by_day_normalized, largest_day_share, three_largest_days_share`
+`hhi` is the Herfindahl index (sum of squared shares, 0 = spread out, 1 = all in one). Chain columns are empty when
+the chain breakdown is missing or does not add up to the protocol's value locked within 5%.
+
+## lending_stress_<date>.csv (weekly)
+`snapshot_utc, protocol, market, chain, asset, deposits_usd, borrowed_usd, available_liquidity_usd, utilization,
+supply_apy, borrow_apy, above_90_and_over_10m`
+One row per market with at least $1M of deposits, not frozen. A snapshot taken at `snapshot_utc`, not a daily average.
