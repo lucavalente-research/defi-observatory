@@ -1,0 +1,58 @@
+{
+ "source": "raw measures of the 6 collateralised-debt protocols tracked, 2026-09-30 (computed from DefiLlama and CoinGecko data)",
+ "day": "2026-09-30",
+ "group": {
+  "crvusd": {
+   "deposit_growth": 0.0169,
+   "fees_on_value": 0.01528273,
+   "data_cleanliness": 99.175
+  },
+  "liquity-v1": {
+   "deposit_growth": -0.016,
+   "fees_on_value": 0.00013524,
+   "data_cleanliness": 99.175
+  },
+  "lista-cdp": {
+   "deposit_growth": -0.2477,
+   "fees_on_value": 0.01036049,
+   "data_cleanliness": 98.35
+  },
+  "sky": {},
+  "sky-lending": {
+   "deposit_growth": 0.0665,
+   "fees_on_value": 0.05448001,
+   "data_cleanliness": 100.0
+  },
+  "usdd": {
+   "deposit_growth": -0.0216,
+   "fees_on_value": 0.0024371,
+   "data_cleanliness": 100.0
+  }
+ },
+ "expected": {
+  "crvusd": {
+   "index": 60.0,
+   "measures": 3
+  },
+  "liquity-v1": {
+   "index": 33.3,
+   "measures": 3
+  },
+  "lista-cdp": {
+   "index": 23.3,
+   "measures": 3
+  },
+  "sky": {
+   "index": null,
+   "measures": 0
+  },
+  "sky-lending": {
+   "index": 86.7,
+   "measures": 3
+  },
+  "usdd": {
+   "index": 46.7,
+   "measures": 3
+  }
+ }
+}

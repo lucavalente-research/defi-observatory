@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "defi-observatory"
+version = "0.1.0"
+description = "Small, documented methods for reading public DeFi data: peer comparison, data check, price/flow decomposition, health index."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Luca Valente"}]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["defi_observatory"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--doctest-modules defi_observatory tests"

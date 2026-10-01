@@ -1,0 +1,31 @@
+{
+ "source": "30-day fee changes of 14 decentralised exchanges (one per family), computed from DefiLlama daily fees: total of the 30 days ending 2026-09-29 against the 30 days before",
+ "end_day": "2026-09-29",
+ "member": "raydium",
+ "changes": {
+  "aerodrome-slipstream": 1.9953,
+  "curve-dex": -0.1086,
+  "fluid-dex": 0.0036,
+  "hyperliquid-spot-orderbook": 0.2418,
+  "meta-2-2": -0.0288,
+  "meteora-dlmm": 1.0509,
+  "orca-dex": 1.5817,
+  "pancakeswap-amm-v3": 0.6407,
+  "pumpswap": 0.2808,
+  "quickswap-dex": -0.2079,
+  "raydium": 3.9937,
+  "sanctum-infinity": 0.2182,
+  "sunswap-v3": 0.0844,
+  "uniswap-v4": 1.6232
+ },
+ "raydium_totals": {
+  "last_30_days": 43724524.0,
+  "previous_30_days": 8755852.0
+ },
+ "expected": {
+  "change": 3.9937,
+  "peer_median": 0.2613,
+  "gap_points": 373.2,
+  "peers": 14
+ }
+}
