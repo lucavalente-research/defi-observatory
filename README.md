@@ -254,7 +254,7 @@ The methods are source-agnostic. The daily data is computed from:
 | [CoinGecko](https://www.coingecko.com) | token prices | CoinGecko API terms; attribution required |
 | [Binance](https://www.binance.com) | perpetual futures funding and open interest | public market-data API terms |
 | [GitHub](https://github.com) | commit counts of public repositories | GitHub REST API terms |
-| [growthepie](https://www.growthepie.xyz) | layer-2 transactions and economics | CC BY-NC 4.0; attribution required |
+| [growthepie](https://www.growthepie.com) | layer-2 transactions and economics | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); attribution required ("Source: growthepie, https://www.growthepie.com"; terms: https://docs.growthepie.com/api) |
 | [Aave](https://aave.com) | lending markets of Aave v3 (official public API) | see the provider's terms |
 | [Morpho](https://morpho.org) | lending markets of Morpho (official public API) | see the provider's terms |
 
@@ -265,6 +265,6 @@ aggregated figures.
 
 Code: MIT (see `LICENSE`).
 
-Daily data in `data/`: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) – free to reuse with attribution ("Luca Valente, defi-observatory") and the attribution of the original sources listed above; not for commercial resale. The non-commercial clause follows from growthepie's CC BY-NC 4.0 terms, one of the inputs.
+Daily data in `data/`: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) – free to reuse with attribution ("Luca Valente, defi-observatory") and the attribution of the original sources listed above; not for commercial resale.
 
 Author: Luca Valente.
