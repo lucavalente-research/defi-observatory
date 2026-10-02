@@ -33,5 +33,7 @@ the chain breakdown is missing or does not add up to the protocol's value locked
 
 ## lending_stress_<date>.csv (weekly)
 `snapshot_utc, protocol, market, chain, asset, deposits_usd, borrowed_usd, available_liquidity_usd, utilization,
-supply_apy, borrow_apy, above_90_and_over_10m`
+supply_apy, borrow_apy, highlighted`
 One row per market with at least $1M of deposits, not frozen. A snapshot taken at `snapshot_utc`, not a daily average.
+`highlighted` = 1 when deposits are at least $10M and utilization is above 90% (above 99% for Morpho, whose markets
+are built to sit at 90%).
