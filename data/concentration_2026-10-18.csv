@@ -1,0 +1,365 @@
+date,protocol_id,protocol,sector,value_locked_usd,chains,hhi_value_locked_by_chain,largest_chain,largest_chain_share,hhi_fees_by_day,hhi_fees_by_day_normalized,largest_day_share,three_largest_days_share
+2026-10-18,lido,Lido,Liquid Staking,23339708849,2,0.9995,Ethereum,0.9998,0.0334,0.0001,0.0365,0.1078
+2026-10-18,aave,Aave,Lending,16854802744,21,0.6922,Ethereum,0.8296,0.0335,0.0002,0.0403,0.1183
+2026-10-18,ssv-network,SSV Network,Staking Pool,12595402130,1,1.0,Ethereum,1.0,0.0337,0.0004,0.0425,0.1191
+2026-10-18,layerzero-v2,LayerZero V2,Liquidity bridges,11307008532,59,0.4824,Ethereum,0.5962,0.0364,0.0032,0.0517,0.1517
+2026-10-18,morpho-blue,Morpho Blue,Lending,11028243298,38,0.3702,Ethereum,0.4541,0.0339,0.0006,0.0508,0.128
+2026-10-18,wbtc,WBTC,Liquidity bridges,9487539382,1,1.0,Bitcoin,1.0,1.0,1.0,1.0,1.0
+2026-10-18,binance-staked-eth,Binance staked ETH,Liquid Staking,8980284699,2,0.8932,Ethereum,0.9434,0.0366,0.0034,0.0683,0.1443
+2026-10-18,coinbase-bridge,Coinbase Bridge,Liquidity bridges,7936125953,4,0.948,Bitcoin,0.9734,,,,
+2026-10-18,hyperliquid-bridge,Hyperliquid Bridge,Liquidity bridges,6748614979,2,0.8892,Hyperliquid L1,0.9411,,,,
+2026-10-18,eigencloud,EigenCloud,Restaking,6213734674,1,1.0,Ethereum,1.0,0.155,0.1259,0.267,0.584
+2026-10-18,sky-lending,Sky Lending,CDP,5666343850,1,1.0,Ethereum,1.0,0.0334,0.0,0.035,0.1048
+2026-10-18,binance-bitcoin,Binance Bitcoin,Liquidity bridges,5558119593,1,1.0,Bitcoin,1.0,,,,
+2026-10-18,sparklend,SparkLend,Lending,5042184001,2,0.9999,Ethereum,1.0,0.0334,0.0001,0.0363,0.1082
+2026-10-18,ethena-usde,Ethena USDe,Basis Trading,4682069369,1,1.0,Ethereum,1.0,0.1983,0.1707,0.259,0.6827
+2026-10-18,ether.fi-stake,ether.fi Stake,Liquid Staking,4594096005,4,0.9979,Ethereum,0.999,0.0336,0.0003,0.0384,0.1135
+2026-10-18,justlend-v1,JustLend V1,Lending,3707050018,1,1.0,Tron,1.0,0.0351,0.0018,0.0503,0.1383
+2026-10-18,babylon-protocol,Babylon Protocol,Restaking,3324696877,1,1.0,Bitcoin,1.0,,,,
+2026-10-18,justlend-strx,JustLend sTRX,Liquid Staking,3284010199,1,1.0,Tron,1.0,,,,
+2026-10-18,usdt0,USDT0,Liquidity bridges,3114886213,1,1.0,Ethereum,1.0,,,,
+2026-10-18,base-bridge,Base Bridge,Canonical Bridge,2921812698,1,1.0,Ethereum,1.0,,,,
+2026-10-18,spark-liquidity-layer,Spark Liquidity Layer,Onchain Capital Allocator,2801186527,5,0.7111,Ethereum,0.826,,,,
+2026-10-18,maple,Maple,Lending,2716551957,1,1.0,Ethereum,1.0,0.0979,0.0668,0.1893,0.4505
+2026-10-18,justcryptos,JustCryptos,Liquidity bridges,2602766706,1,1.0,Tron,1.0,,,,
+2026-10-18,steakhouse-financial,Steakhouse Financial,Risk Curators,2502117797,10,0.3373,Base,0.4658,0.0335,0.0002,0.0375,0.1107
+2026-10-18,sentora-curator,Sentora Curator,Risk Curators,2500354010,4,0.3521,Ethereum,0.4424,0.0336,0.0003,0.0392,0.1131
+2026-10-18,ccip,CCIP,Messaging bridges,1919280520,19,0.616,Ethereum,0.7715,,,,
+2026-10-18,veda,Veda,Onchain Capital Allocator,1820889040,13,0.3608,Ink,0.482,0.034,0.0007,0.0448,0.1268
+2026-10-18,sanctum-validator-lsts,Sanctum Validator LSTs,Liquid Staking,1799355742,1,1.0,Solana,1.0,0.0424,0.0094,0.0514,0.1446
+2026-10-18,falcon-finance,Falcon USD,Basis Trading,1718709507,1,1.0,Ethereum,1.0,0.0415,0.0085,0.0655,0.1866
+2026-10-18,spark-savings,Spark Savings,Yield,1674289102,8,0.5895,Ethereum,0.7424,,,,
+2026-10-18,gauntlet,Gauntlet,Risk Curators,1602890483,13,0.3056,Base,0.3765,,,,
+2026-10-18,portal,Portal,Liquidity bridges,1590323779,14,0.7209,Ethereum,0.8446,0.0404,0.0073,0.1013,0.2034
+2026-10-18,uniswap,Uniswap,DEXs,1576243305,43,0.364,Ethereum,0.5618,0.0394,0.0062,0.0645,0.1765
+2026-10-18,pancakeswap-amm,PancakeSwap AMM,DEXs,1560697432,10,0.9944,Binance,0.9972,0.0392,0.0061,0.0833,0.1881
+2026-10-18,compound-v3,Compound V3,Lending,1393235182,10,0.8533,Ethereum,0.9223,0.0345,0.0012,0.0489,0.1434
+2026-10-18,grove-finance,Grove Finance,Onchain Capital Allocator,1376189459,5,0.3705,Ethereum,0.508,,,,
+2026-10-18,uniswap-v4,Uniswap V4,DEXs,1371811392,19,0.3657,Ethereum,0.5705,0.0357,0.0025,0.0479,0.142
+2026-10-18,kamino-lend,Kamino Lend,Lending,1306613214,1,1.0,Solana,1.0,,,,
+2026-10-18,usdd,USDD,CDP,1254850618,3,0.9456,Tron,0.9722,0.0333,0.0,0.0337,0.1011
+2026-10-18,rocket-pool,Rocket Pool,Liquid Staking,1233094486,1,1.0,Ethereum,1.0,0.0562,0.0236,0.1115,0.3089
+2026-10-18,concrete,Concrete,Onchain Capital Allocator,1199496187,5,0.8729,Ethereum,0.9326,,,,
+2026-10-18,curve-dex,Curve DEX,DEXs,1198461051,27,0.8987,Ethereum,0.9478,0.0586,0.0261,0.1096,0.2892
+2026-10-18,venus-core-pool,Venus Core Pool,Lending,1183194411,8,0.9923,Binance,0.9962,0.0597,0.0273,0.1696,0.3191
+2026-10-18,raydium-amm,Raydium AMM,DEXs,1170309236,1,1.0,Solana,1.0,0.0462,0.0133,0.0919,0.2426
+2026-10-18,pendle-v2,Pendle V2,Yield,1105749971,13,0.5428,Ethereum,0.7199,0.0737,0.0417,0.1803,0.4058
+2026-10-18,jupiter-lend,Jupiter Lend,Lending,1086969452,1,1.0,Solana,1.0,0.0343,0.001,0.0435,0.1224
+2026-10-18,jito-liquid-staking,Jito Liquid Staking,Liquid Staking,1086292695,1,1.0,Solana,1.0,0.0426,0.0096,0.0528,0.1471
+2026-10-18,binance-staked-sol,Binance Staked SOL,Liquid Staking,1086221041,1,1.0,Solana,1.0,0.0426,0.0096,0.0525,0.1495
+2026-10-18,obol,Obol,Staking Pool,1002067603,1,1.0,Ethereum,1.0,,,,
+2026-10-18,kelp,Kelp,Liquid Restaking,971664908,1,1.0,Ethereum,1.0,0.0585,0.026,0.1119,0.325
+2026-10-18,lista-lending,Lista Lending,Lending,965900847,2,0.9738,Binance,0.9867,0.035,0.0018,0.0573,0.1461
+2026-10-18,unit,Unit,Liquidity bridges,955122345,8,0.3895,Bitcoin,0.5749,0.0521,0.0194,0.14,0.282
+2026-10-18,uniswap-v2,Uniswap V2,DEXs,941203618,15,0.741,Ethereum,0.8551,0.0479,0.015,0.1167,0.2565
+2026-10-18,stakewise-v3,StakeWise V3,Liquid Staking,911552589,2,0.9974,Ethereum,0.9987,0.0338,0.0005,0.044,0.1248
+2026-10-18,kinetiq-khype,Kinetiq kHYPE,Liquid Staking,844718399,1,1.0,Hyperliquid L1,1.0,0.0366,0.0033,0.064,0.1506
+2026-10-18,kraken-bitcoin,Kraken Bitcoin,Liquidity bridges,771891472,1,1.0,Bitcoin,1.0,,,,
+2026-10-18,lista-liquid-staking,Lista Liquid Staking,Liquid Staking,743205225,1,1.0,Binance,1.0,0.0367,0.0035,0.0553,0.1589
+2026-10-18,jupiter-perpetual-exchange,Jupiter Perpetual Exchange,Derivatives,736171150,1,1.0,Solana,1.0,0.0424,0.0093,0.0764,0.1995
+2026-10-18,tornado-cash,Tornado Cash,Privacy,680657920,8,0.8468,Ethereum,0.9165,0.0463,0.0134,0.106,0.2387
+2026-10-18,function-fbtc,Function FBTC,Liquidity bridges,675810476,1,1.0,Bitcoin,1.0,,,,
+2026-10-18,fluid-lending,Fluid Lending,Lending,670938337,5,0.5408,Ethereum,0.7043,,,,
+2026-10-18,liquid-collective,Liquid Collective,Liquid Staking,659603977,1,1.0,Ethereum,1.0,0.0352,0.0019,0.0741,0.1492
+2026-10-18,aave-v4,Aave V4,Lending,652951900,3,0.5298,Ethereum,0.6697,0.0363,0.0031,0.0796,0.1597
+2026-10-18,lombard-lbtc,Lombard LBTC,Restaked BTC,627386555,1,1.0,Bitcoin,1.0,,,,
+2026-10-18,robinhood-chain-bridge,Robinhood Chain Bridge,Canonical Bridge,625367581,1,1.0,Ethereum,1.0,,,,
+2026-10-18,lighter-bridge,Lighter Bridge,Liquidity bridges,611784774,2,1.0,Ethereum,1.0,,,,
+2026-10-18,nonce-capital,Nonce Capital,Risk Curators,588634046,2,0.5334,Ethereum,0.6292,,,,
+2026-10-18,convex-finance,Convex Finance,Yield,574051717,4,0.9738,Ethereum,0.9868,0.0686,0.0364,0.1569,0.3587
+2026-10-18,meth-protocol,mETH Protocol,Liquid Staking,564575802,1,1.0,Ethereum,1.0,0.0341,0.0007,0.0402,0.1189
+2026-10-18,jupiter-staked-sol,Jupiter Staked SOL,Liquid Staking,539633775,1,1.0,Solana,1.0,0.0425,0.0095,0.053,0.1467
+2026-10-18,solvbtc,SolvBTC,Liquidity bridges,518886505,8,0.9434,Bitcoin,0.9711,0.0334,0.0,0.0347,0.1034
+2026-10-18,lorenzo-enzobtc,Lorenzo enzoBTC,Liquidity bridges,490543098,1,1.0,Bitcoin,1.0,,,,
+2026-10-18,pancakeswap-amm-v3,PancakeSwap AMM V3,DEXs,489205936,10,0.7569,Binance,0.8671,0.0372,0.004,0.0588,0.1611
+2026-10-18,bittensor-dtao,Bittensor dTAO,DEXs,484854912,1,1.0,Bittensor,1.0,,,,
+2026-10-18,aster-bridge,Aster Bridge,Liquidity bridges,478749742,4,0.4471,Binance,0.6064,,,,
+2026-10-18,ethena-usdtb,Ethena USDtb,RWA tokenized treasuries,475708907,1,1.0,Ethereum,1.0,,,,
+2026-10-18,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,Liquid Staking,470159396,1,1.0,Ethereum,1.0,0.0335,0.0002,0.0358,0.1071
+2026-10-18,symbiotic,Symbiotic,Collateral Markets,450686492,1,1.0,Ethereum,1.0,0.4517,0.4328,0.6611,0.8055
+2026-10-18,re,Re,RWA private credit,443298679,4,0.9771,Ethereum,0.9884,,,,
+2026-10-18,world-chain,World Chain,Canonical Bridge,432899643,1,1.0,Ethereum,1.0,0.0361,0.0028,0.0687,0.1729
+2026-10-18,merlins-seal,Merlins Seal,Liquidity bridges,430747711,1,1.0,Bitcoin,1.0,,,,
+2026-10-18,huma,Huma,RWA other,405345076,4,0.5666,Solana,0.692,0.0335,0.0002,0.0419,0.1171
+2026-10-18,huma-finance-v2,Huma Finance V2,cerchio 2,405345076,4,0.5666,Solana,0.692,0.0335,0.0002,0.0419,0.1171
+2026-10-18,ether.fi-liquid,ether.fi Liquid,Onchain Capital Allocator,395459698,1,1.0,Ethereum,1.0,0.0417,0.0086,0.0464,0.1382
+2026-10-18,upshift,Upshift,Onchain Capital Allocator,386137564,12,0.4881,Ethereum,0.6801,0.0446,0.0117,0.0996,0.2165
+2026-10-18,defi-saver-asset-management,Defi Saver Asset Management,CDP Manager,378640266,3,0.9393,Ethereum,0.9687,0.0942,0.0629,0.2084,0.4609
+2026-10-18,marinade-native,Marinade Native,Staking Pool,377314013,1,1.0,Solana,1.0,0.0335,0.0002,0.0368,0.1095
+2026-10-18,polymarket-international,Polymarket International,Prediction Market,355674229,1,1.0,Polygon,1.0,,,,
+2026-10-18,rocketswap-anubis,RocketSwap Anubis,DEXs,352861452,1,1.0,Anubis,1.0,,,,
+2026-10-18,bedrock-unibtc,Bedrock uniBTC,Anchor BTC,352260499,13,0.2785,Bitcoin,0.3912,0.2437,0.2176,0.3228,0.8349
+2026-10-18,pumpswap,PumpSwap,DEXs,348902480,1,1.0,Solana,1.0,0.0345,0.0012,0.0476,0.1385
+2026-10-18,tbtc,tBTC,Decentralized BTC,344090776,1,1.0,Bitcoin,1.0,0.0982,0.0671,0.2333,0.4463
+2026-10-18,anemoy-capital,Anemoy Capital,RWA tokenized treasuries,333109325,2,0.9614,Ethereum,0.9803,,,,
+2026-10-18,dolomite,Dolomite,Lending,321227701,5,0.8399,Ethereum,0.9136,0.0335,0.0002,0.0407,0.1144
+2026-10-18,hyperlend-pooled,HyperLend Pooled,Lending,320546486,1,1.0,Hyperliquid L1,1.0,0.0651,0.0329,0.1464,0.3401
+2026-10-18,cian-yield-layer,CIAN Yield Layer,Yield Aggregator,315151257,6,0.5386,Ethereum,0.6472,0.0348,0.0015,0.0596,0.1442
+2026-10-18,etherfi-borrowing-market,EtherFi Borrowing Market,Lending,299620458,2,0.9998,Optimism,0.9999,0.0334,0.0001,0.0393,0.1075
+2026-10-18,orca-dex,Orca DEX,DEXs,298354501,2,0.9999,Solana,1.0,0.0379,0.0047,0.0734,0.1686
+2026-10-18,onre,OnRe,RWA private credit,293552662,1,1.0,Solana,1.0,,,,
+2026-10-18,forward-industries-sol,Forward Industries SOL,Liquid Staking,288393813,1,1.0,Solana,1.0,0.0423,0.0092,0.0501,0.1435
+2026-10-18,drift-staked-sol,Drift Staked SOL,Liquid Staking,287583929,1,1.0,Solana,1.0,0.0426,0.0096,0.0524,0.1461
+2026-10-18,euler-v2,Euler V2,Lending,287366527,14,0.5423,Monad,0.7112,0.0334,0.0,0.0349,0.1041
+2026-10-18,lightning-network,Lightning Network,Payments,287139730,1,1.0,Bitcoin,1.0,,,,
+2026-10-18,rockawayx,RockawayX,Risk Curators,283519307,10,0.3871,Ethereum,0.4863,0.0335,0.0002,0.038,0.1131
+2026-10-18,gtbtc,GTBTC,Restaked BTC,282209585,1,1.0,Bitcoin,1.0,0.0336,0.0003,0.0374,0.1119
+2026-10-18,xdai-stake-bridge,xDAI Stake Bridge,Canonical Bridge,263279176,1,1.0,Ethereum,1.0,,,,
+2026-10-18,usd-ai,USD AI,RWA private credit,262918854,1,1.0,Arbitrum,1.0,0.3434,0.3207,0.5234,0.8481
+2026-10-18,b14g,b14g,Restaking,262466953,3,0.9729,Bitcoin,0.9863,0.0349,0.0016,0.0527,0.1405
+2026-10-18,buzz-farming,Buzz Farming,Farm,262358418,1,1.0,BSquared,1.0,,,,
+2026-10-18,sunswap-v2,SUNSwap V2,DEXs,261725583,1,1.0,Tron,1.0,0.0393,0.0062,0.0761,0.2034
+2026-10-18,hyperithm,Hyperithm,Risk Curators,260369177,8,0.5935,Monad,0.7175,0.0335,0.0002,0.0388,0.1128
+2026-10-18,mellow-core,Mellow Core,Onchain Capital Allocator,259708391,5,0.9819,Ethereum,0.9909,,,,
+2026-10-18,aave-horizon-rwa,Aave Horizon RWA,Lending,254359427,1,1.0,Ethereum,1.0,,,,
+2026-10-18,linea-bridge,Linea Bridge,Canonical Bridge,250461764,1,1.0,Ethereum,1.0,,,,
+2026-10-18,opentrade,OpenTrade,RWA other,247879092,3,0.5175,Avalanche,0.6819,0.0503,0.0176,0.1298,0.2879
+2026-10-18,nexus-btc,Nexus BTC,Liquidity bridges,246118534,1,1.0,Bitcoin,1.0,,,,
+2026-10-18,etherfi-cash-liquid,EtherFi Cash Liquid,Crypto Card Issuer,241079938,2,0.9998,Optimism,0.9999,0.0341,0.0008,0.0522,0.1316
+2026-10-18,plume-vaults,Plume Vaults,RWA other,235217805,5,0.2724,Ethereum,0.3462,,,,
+2026-10-18,marinade-liquid-staking,Marinade Liquid Staking,Liquid Staking,234506037,1,1.0,Solana,1.0,0.0335,0.0002,0.0363,0.1084
+2026-10-18,fluid-dex,Fluid DEX,DEXs,232408449,5,0.6625,Ethereum,0.8045,0.0405,0.0074,0.0681,0.1924
+2026-10-18,cooler-loans,Cooler Loans,Lending,230454019,1,1.0,Ethereum,1.0,0.0368,0.0035,0.0601,0.1637
+2026-10-18,bitfi-basis,BitFi Basis,Basis Trading,230028928,7,0.3254,Binance,0.4458,,,,
+2026-10-18,k3-capital,K3 Capital,Risk Curators,229911024,8,0.6602,Monad,0.7981,0.0334,0.0001,0.0362,0.1069
+2026-10-18,stader,Stader,Liquid Staking,228532857,2,0.7523,Ethereum,0.8552,0.0616,0.0292,0.1136,0.2724
+2026-10-18,benqi-staked-avax,Benqi Staked Avax,Liquid Staking,228482266,1,1.0,Avalanche,1.0,0.0585,0.0261,0.1483,0.3128
+2026-10-18,aerodrome-slipstream,Aerodrome Slipstream,DEXs,225923358,1,1.0,Base,1.0,0.0353,0.002,0.0487,0.1394
+2026-10-18,cap,cap,Lending,223819205,1,1.0,Ethereum,1.0,0.0489,0.0161,0.1364,0.2422
+2026-10-18,kpk,KPK,Risk Curators,218557333,8,0.7773,Ethereum,0.8788,0.0336,0.0003,0.0394,0.1165
+2026-10-18,sunswap-v3,SUNSwap V3,DEXs,217320442,1,1.0,Tron,1.0,0.0357,0.0025,0.0491,0.1469
+2026-10-18,gmx-evm,GMX EVM,Derivatives,212106439,3,0.9245,Arbitrum,0.9608,0.0391,0.0059,0.0665,0.1819
+2026-10-18,gmx-v2-perps,,cerchio 2,212106439,3,0.9245,Arbitrum,0.9608,0.0391,0.0059,0.0665,0.1819
+2026-10-18,b2-buzz,B2 Buzz,Canonical Bridge,211990893,1,1.0,Bitcoin,1.0,,,,
+2026-10-18,m0,M0,Stablecoin Issuer,211642764,1,1.0,Ethereum,1.0,0.0333,0.0,0.0345,0.1028
+2026-10-18,near-intents,NEAR Intents,Liquidity bridges,211474922,25,0.4005,Near,0.5706,0.0393,0.0062,0.0762,0.1852
+2026-10-18,dfdv-staked-sol,DFDV Staked SOL,Liquid Staking,211451900,1,1.0,Solana,1.0,,,,
+2026-10-18,fluid-lite,Fluid Lite,Yield Aggregator,209954721,1,1.0,Ethereum,1.0,0.0406,0.0075,0.1068,0.1974
+2026-10-18,solstice,Solstice,Basis Trading,209304385,1,1.0,Solana,1.0,0.035,0.0017,0.044,0.1319
+2026-10-18,stacks-sbtc,Stacks sBTC,Liquidity bridges,202656463,1,1.0,Bitcoin,1.0,,,,
+2026-10-18,clearstar,Clearstar,Risk Curators,201083863,10,0.2923,Base,0.3654,0.034,0.0007,0.044,0.1245
+2026-10-18,solv-basis-trading,Solv Basis Trading,Basis Trading,200809785,4,0.9997,Binance,0.9999,,,,
+2026-10-18,exsat-staking-btc,exSat Staking BTC,Liquidity bridges,200272626,1,1.0,Bitcoin,1.0,,,,
+2026-10-18,figure-markets-democratized-prime,Figure Markets Democratized Prime,Lending,197852611,1,1.0,Provenance,1.0,,,,
+2026-10-18,sanctum-infinity,Sanctum Infinity,DEXs,196695560,1,1.0,Solana,1.0,0.2802,0.2554,0.5167,0.5795
+2026-10-18,fassets,FAssets,Liquidity bridges,195064365,2,0.8921,Ripple,0.9428,,,,
+2026-10-18,tonstakers-lsd,Tonstakers LSD,Liquid Staking,190693687,1,1.0,TON,1.0,0.0379,0.0047,0.0625,0.1666
+2026-10-18,rhea-lend,Rhea Lend,Lending,189040209,1,1.0,Near,1.0,0.0364,0.0032,0.0591,0.16
+2026-10-18,derive-v3-options,Derive V3 Options,Options,182103518,1,1.0,Ethereum,1.0,,,,
+2026-10-18,hyperliquid-hlp,Hyperliquid HLP,Vault,178109941,1,1.0,Hyperliquid L1,1.0,0.0387,0.0055,0.0681,0.1798
+2026-10-18,sthype,stHYPE,Liquid Staking,173788625,1,1.0,Hyperliquid L1,1.0,0.0395,0.0064,0.0888,0.1722
+2026-10-18,liquity-v1,Liquity V1,CDP,172025283,1,1.0,Ethereum,1.0,0.3862,0.365,0.5906,0.8092
+2026-10-18,lombard-btc.b,Lombard BTC.b,Liquidity bridges,171350487,1,1.0,Bitcoin,1.0,,,,
+2026-10-18,r25,R25,RWA other,169836418,2,0.9073,Pharos,0.9513,,,,
+2026-10-18,phantom-sol,Phantom SOL,Liquid Staking,167597677,1,1.0,Solana,1.0,0.0424,0.0094,0.0534,0.1475
+2026-10-18,aera-v3,Aera V3,Onchain Capital Allocator,167091931,5,0.3954,Base,0.4821,,,,
+2026-10-18,meteora-dlmm,Meteora DLMM,DEXs,161033837,1,1.0,Solana,1.0,0.0396,0.0064,0.0631,0.1765
+2026-10-18,navi-lending,NAVI Lending,Lending,160567808,1,1.0,Sui,1.0,0.0472,0.0144,0.1072,0.2874
+2026-10-18,lagoon,Lagoon,Onchain Capital Allocator,157126043,17,0.8019,Ethereum,0.8929,0.0487,0.0159,0.0967,0.2605
+2026-10-18,suilend,Suilend,Lending,157113025,1,1.0,Sui,1.0,0.0366,0.0034,0.0874,0.1669
+2026-10-18,realt-tokens,RealT Tokens,RWA other,155082963,1,1.0,xDai,1.0,,,,
+2026-10-18,pinksale,PinkSale,Launchpad,154292195,6,0.848,Binance,0.9177,0.0959,0.0647,0.2006,0.4203
+2026-10-18,yearn-finance,Yearn Finance,Yield Aggregator,153271122,7,0.7767,Ethereum,0.8758,0.0349,0.0016,0.057,0.152
+2026-10-18,saturn,Saturn,Stablecoin Wrapper,151992094,1,1.0,Ethereum,1.0,,,,
+2026-10-18,stake-dao-yield,Stake DAO Yield,Yield,146165314,8,0.9342,Ethereum,0.9664,0.1832,0.155,0.202,0.5829
+2026-10-18,figure-markets-exchange,Figure Markets Exchange,OTC Marketplace,146076355,1,1.0,Provenance,1.0,0.1186,0.0882,0.2149,0.5264
+2026-10-18,armitage-by-wintermute,Armitage by Wintermute,Risk Curators,145323657,1,1.0,Ethereum,1.0,0.0335,0.0002,0.0416,0.1154
+2026-10-18,bybit-staked-sol,Bybit Staked SOL,Liquid Staking,144474854,1,1.0,Solana,1.0,0.0421,0.0091,0.0495,0.1439
+2026-10-18,axelar,Axelar,Messaging bridges,144014936,20,0.7724,Ethereum,0.8733,0.0428,0.0098,0.0746,0.2031
+2026-10-18,avalon-superearn,Avalon Superearn,Yield,142270153,3,0.661,Ethereum,0.7837,,,,
+2026-10-18,marinade-select,Marinade Select,Staking Pool,141171411,1,1.0,Solana,1.0,0.0335,0.0002,0.0367,0.109
+2026-10-18,avalanche-core-bridge,Avalanche Core Bridge,Canonical Bridge,140851498,1,1.0,Ethereum,1.0,,,,
+2026-10-18,hyperliquid-spot-orderbook,Hyperliquid Spot Orderbook,DEXs,140428519,1,1.0,Hyperliquid L1,1.0,0.0417,0.0087,0.0849,0.214
+2026-10-18,near-bridge,NEAR Bridge,Canonical Bridge,140303589,7,0.4711,Ethereum,0.5286,,,,
+2026-10-18,aerodrome-v1,Aerodrome V1,DEXs,139331654,1,1.0,Base,1.0,0.0537,0.0211,0.1028,0.2942
+2026-10-18,uncx-network-v2,UNCX Network V2,Token Locker,136464719,9,0.5564,Ethereum,0.6924,0.1502,0.1209,0.2804,0.5752
+2026-10-18,the-vault-liquid-staking,The Vault Liquid Staking,Liquid Staking,135040267,1,1.0,Solana,1.0,0.0426,0.0096,0.0515,0.1453
+2026-10-18,crvusd,crvUSD,CDP,134981369,1,1.0,Ethereum,1.0,0.1164,0.086,0.1486,0.4296
+2026-10-18,blend-pools-v2,Blend Pools V2,Lending,134632139,1,1.0,Stellar,1.0,,,,
+2026-10-18,theo-network-thusd,Theo Network thUSD,RWA other,132056418,1,1.0,Ethereum,1.0,,,,
+2026-10-18,zama,Zama,Privacy,131065931,1,1.0,Ethereum,1.0,,,,
+2026-10-18,tydro,Tydro,Lending,129634598,1,1.0,Ink,1.0,0.0358,0.0025,0.0385,0.1145
+2026-10-18,jpool,JPool,Liquid Staking,128759541,1,1.0,Solana,1.0,0.0429,0.0099,0.0637,0.1637
+2026-10-18,galaxy-curation,Galaxy Curation,Risk Curators,124629805,3,0.5888,Arc,0.7207,0.0397,0.0066,0.0686,0.1996
+2026-10-18,yield-basis,Yield Basis,Leveraged Farming,122714518,1,1.0,Ethereum,1.0,,,,
+2026-10-18,frax-ether,Frax Ether,Liquid Staking,121796126,2,0.9979,Ethereum,0.9989,0.2503,0.2244,0.2605,0.7579
+2026-10-18,fx-protocol,fx Protocol,Dual-Token Stablecoin,121371056,1,1.0,Ethereum,1.0,0.0849,0.0533,0.1182,0.3352
+2026-10-18,avant-avusd,Avant avUSD,Onchain Capital Allocator,120076151,1,1.0,Avalanche,1.0,0.0352,0.0019,0.0638,0.1587
+2026-10-18,meta-pool-near,Meta Pool Near,Liquid Staking,119551114,2,1.0,Near,1.0,,,,
+2026-10-18,doppler-finance,Doppler Finance,CeDeFi,118290440,2,0.9971,Ripple,0.9985,0.0334,0.0001,0.0361,0.1067
+2026-10-18,benqi-lending,Benqi Lending,Lending,116026118,1,1.0,Avalanche,1.0,0.0344,0.0011,0.045,0.132
+2026-10-18,bitget-bgbtc,Bitget bgBTC,Liquidity bridges,115630193,1,1.0,Bitcoin,1.0,,,,
+2026-10-18,extended-perps,Extended Perps,Derivatives,115562682,2,0.9973,Starknet,0.9987,0.0395,0.0064,0.0846,0.1832
+2026-10-18,phase-delegation,Phase Delegation,Liquid Staking,114101232,1,1.0,Solana,1.0,0.0425,0.0095,0.0522,0.1462
+2026-10-18,lighter-robinhood-perps,Lighter Robinhood Perps,Derivatives,112031850,1,1.0,Robinhood Chain,1.0,0.0369,0.0036,0.0569,0.1597
+2026-10-18,railgun,Railgun,Privacy,112021249,4,0.9231,Ethereum,0.9604,0.0525,0.0199,0.1589,0.2575
+2026-10-18,zksync-era-txbridge,zkSync Era txBridge,Canonical Bridge,111377241,1,1.0,Ethereum,1.0,,,,
+2026-10-18,aster-usdf,Aster USDF,Basis Trading,111309331,1,1.0,Binance,1.0,,,,
+2026-10-18,renzo,Renzo,Liquid Restaking,109964811,13,0.5415,Ethereum,0.7159,0.0476,0.0147,0.1173,0.234
+2026-10-18,beefy,Beefy,Yield Aggregator,109885079,23,0.2583,Ethereum,0.4564,0.0393,0.0061,0.0662,0.1866
+2026-10-18,sky-money,Sky Money,Risk Curators,109543998,1,1.0,Ethereum,1.0,0.0344,0.0011,0.0481,0.1366
+2026-10-18,sunswap-v4,SunSwap V4,DEXs,108706500,1,1.0,Tron,1.0,0.0381,0.0049,0.0651,0.1768
+2026-10-18,aave-v2,Aave V2,Lending,106386299,3,0.6108,Ethereum,0.761,0.0372,0.004,0.0648,0.167
+2026-10-18,valos,Valos,RWA other,105826765,1,1.0,Monad,1.0,,,,
+2026-10-18,compound-v2,Compound V2,Lending,104608563,1,1.0,Ethereum,1.0,0.034,0.0007,0.0425,0.1245
+2026-10-18,avalon-cedefi,Avalon CeDeFi,Anchor BTC,104406743,1,1.0,Ethereum,1.0,,,,
+2026-10-18,linear-protocol,LiNEAR Protocol,Liquid Staking,104223158,1,1.0,Near,1.0,,,,
+2026-10-18,frax-usd,Frax USD,RWA tokenized treasuries,103608477,1,1.0,Ethereum,1.0,0.0334,0.0,0.0349,0.1037
+2026-10-18,ember-protocol,Ember Protocol,Onchain Capital Allocator,103508717,5,0.2805,Ethereum,0.347,0.0352,0.0019,0.0445,0.1306
+2026-10-18,sosovalue-indexes,SoSoValue Indexes,Indexes,102714115,7,0.4569,Bitcoin,0.6447,0.0373,0.0041,0.0613,0.1659
+2026-10-18,curvance,Curvance,Lending,101347388,1,1.0,Monad,1.0,0.0381,0.0049,0.061,0.1714
+2026-10-18,lofty,Lofty,RWA other,101151336,1,1.0,Algorand,1.0,,,,
+2026-10-18,helius-staked-sol,Helius Staked SOL,Liquid Staking,98042163,1,1.0,Solana,1.0,0.0425,0.0095,0.0515,0.1451
+2026-10-18,nexus-mutual,Nexus Mutual,Insurance,97988305,1,1.0,Ethereum,1.0,,,,
+2026-10-18,usual-usd0,Usual USD0,RWA tokenized treasuries,83250702,1,1.0,Ethereum,1.0,0.0467,0.0138,0.0957,0.2518
+2026-10-18,lista-cdp,Lista CDP,CDP,79508415,1,1.0,Binance,1.0,0.0378,0.0046,0.0574,0.1599
+2026-10-18,stargate-v2,Stargate V2,Cross Chain Bridge,77950869,21,0.4935,Ethereum,0.6819,,,,
+2026-10-18,dydx-v4,dYdX V4,Derivatives,70169592,1,1.0,dYdX,1.0,,,,
+2026-10-18,sky-rwa,Sky RWA,RWA private credit,69668751,1,1.0,Ethereum,1.0,,,,
+2026-10-18,papertrade,Papertrade,Derivatives,66737175,1,1.0,Hyperliquid L1,1.0,,,,
+2026-10-18,exponent-yield-exchange,Exponent Yield Exchange,Yield,61722019,1,1.0,Solana,1.0,0.249,0.2231,0.4292,0.7264
+2026-10-18,arcus-perps,Arcus Perps,Derivatives,61429999,1,1.0,Robinhood Chain,1.0,0.0433,0.0103,0.0625,0.1835
+2026-10-18,stusdt,stUSDT,RWA tokenized treasuries,56326250,2,0.9371,Tron,0.9675,0.0339,0.0006,0.0558,0.127
+2026-10-18,azverse-perps,AZverse Perps,Derivatives,52024357,5,0.9405,Arbitrum,0.9696,0.0374,0.0042,0.0605,0.1715
+2026-10-18,quickswap-dex,Quickswap Dex,DEXs,50646514,2,0.9994,Polygon,0.9997,0.0502,0.0174,0.1211,0.2893
+2026-10-18,brickken,Brickken,RWA other,42363771,5,0.522,Binance,0.6854,,,,
+2026-10-18,tangible-rwa,Tangible RWA,RWA other,41806386,3,1.0,Polygon,1.0,,,,
+2026-10-18,kaio,KAIO,RWA other,39649239,8,0.2167,Sei,0.3702,0.0333,0.0,0.0338,0.1014
+2026-10-18,frax,Legacy Frax Dollar,Algo-Stables,36487876,1,1.0,Ethereum,1.0,0.1853,0.1572,0.258,0.6574
+2026-10-18,dydx-v3,dYdX V3,Derivatives,31024015,1,1.0,Ethereum,1.0,,,,
+2026-10-18,apex-omni,Apex Omni,Derivatives,30698350,5,0.3796,Ethereum,0.5649,0.0443,0.0114,0.0939,0.2433
+2026-10-18,decibel,Decibel,Derivatives,29617542,1,1.0,Aptos,1.0,0.0503,0.0175,0.1467,0.2548
+2026-10-18,gmtrade,,cerchio 2,26644732,1,1.0,Solana,1.0,0.0607,0.0283,0.1229,0.3127
+2026-10-18,gmx-solana,GMX Solana,Derivatives,26644732,1,1.0,Solana,1.0,0.0607,0.0283,0.1229,0.3127
+2026-10-18,phoenix-perp,Phoenix Perp,Derivatives,23701048,1,1.0,Solana,1.0,0.0385,0.0053,0.0562,0.1659
+2026-10-18,risex,RISEx,Derivatives,20382884,1,1.0,RISE,1.0,,,,
+2026-10-18,telos-consilium,Telos Consilium,Risk Curators,16369525,2,0.9846,Ethereum,0.9923,0.0334,0.0001,0.0362,0.1069
+2026-10-18,rain,Rain,Prediction Market,16056646,1,1.0,Arbitrum,1.0,,,,
+2026-10-18,aevo-perps,Aevo Perps,Derivatives,14673703,4,0.7374,Ethereum,0.8531,,,,
+2026-10-18,veranta,Veranta,Derivatives,11775410,1,1.0,Base,1.0,0.0626,0.0302,0.1181,0.3326
+2026-10-18,moonlander,Moonlander,Derivatives,10948754,2,0.9989,Cronos,0.9994,0.2011,0.1736,0.3749,0.6351
+2026-10-18,predict-fun,Predict Fun,Prediction Market,10767652,2,0.9933,Binance,0.9966,0.0345,0.0012,0.0509,0.1429
+2026-10-18,contango-v2,Contango V2,Derivatives,10461450,10,0.3696,Ethereum,0.4729,0.337,0.3141,0.5643,0.697
+2026-10-18,mux-perps,MUX Perps,Derivatives,9615284,5,0.8159,Arbitrum,0.9013,0.0729,0.041,0.1444,0.3589
+2026-10-18,fulcrom-perps,Fulcrom Perps,Derivatives,9469064,3,0.922,Cronos,0.9596,,,,
+2026-10-18,mento-v2,Mento V2,Algo-Stables,8957734,3,0.6023,Ethereum,0.7536,0.1732,0.1446,0.3322,0.6209
+2026-10-18,gains-network,Gains Network,Derivatives,8857507,5,0.6623,Arbitrum,0.8037,0.0793,0.0476,0.1893,0.3961
+2026-10-18,circle-bitcoin,Circle Bitcoin,Liquidity bridges,7038634,1,1.0,Bitcoin,1.0,,,,
+2026-10-18,lisk-bridge,Lisk Bridge,Canonical Bridge,6492312,1,1.0,Ethereum,1.0,,,,
+2026-10-18,ostium,Ostium,Derivatives,4155508,1,1.0,Arbitrum,1.0,,,,
+2026-10-18,opinion,OPINION,Prediction Market,3062752,1,1.0,Binance,1.0,0.0345,0.0012,0.0471,0.1357
+2026-10-18,fang,Fang,Algo-Stables,2771521,1,1.0,Robinhood Chain,1.0,,,,
+2026-10-18,sport.fun,Sport.fun,Prediction Market,2191778,1,1.0,Base,1.0,0.04,0.0069,0.0888,0.1898
+2026-10-18,pascal,Pascal,Prediction Market,2050162,1,1.0,Solana,1.0,,,,
+2026-10-18,levr-bet,Levr Bet,Prediction Market,1850983,1,1.0,Monad,1.0,,,,
+2026-10-18,augur,Augur,Prediction Market,1798862,1,1.0,Ethereum,1.0,,,,
+2026-10-18,overtime,Overtime,Prediction Market,1350826,4,0.3286,Arbitrum,0.363,,,,
+2026-10-18,predictstreet,PredictStreet,Prediction Market,1339693,1,1.0,ADI,1.0,0.0995,0.0685,0.1604,0.4356
+2026-10-18,liquidity-house,Liquidity House,Prediction Market,1249611,1,1.0,Etherlink,1.0,,,,
+2026-10-18,trueo,Trueo,Prediction Market,1063080,1,1.0,Base,1.0,,,,
+2026-10-18,meridian-predict,Meridian Predict,Prediction Market,1029140,1,1.0,Robinhood Chain,1.0,,,,
+2026-10-18,gnosis-protocol-v1,Gnosis Protocol v1,Prediction Market,1025527,1,1.0,Ethereum,1.0,,,,
+2026-10-18,zethr,Zethr,Prediction Market,664978,1,1.0,Ethereum,1.0,,,,
+2026-10-18,sigmausd,Sigmausd,Algo-Stables,533080,1,1.0,Ergo,1.0,,,,
+2026-10-18,prdt,PRDT,Prediction Market,479416,6,0.5324,Ethereum,0.6995,,,,
+2026-10-18,derive-v2,Derive V2,Derivatives,426338,4,0.9086,Optimism,0.9525,,,,
+2026-10-18,limitless-exchange,Limitless Exchange,Prediction Market,359862,1,1.0,Base,1.0,,,,
+2026-10-18,seer,Seer,Prediction Market,340764,2,0.8371,xDai,0.9105,,,,
+2026-10-18,ostable,Ostable,Algo-Stables,297870,1,1.0,Obyte,1.0,,,,
+2026-10-18,azuro,Azuro,Prediction Market,248968,5,0.7528,Polygon,0.8633,,,,
+2026-10-18,predictex,PredictEX,Prediction Market,238598,1,1.0,Base,1.0,,,,
+2026-10-18,myriad-markets,Myriad Markets,Prediction Market,229067,3,0.4723,Abstract,0.5681,0.2274,0.2007,0.4481,0.6245
+2026-10-18,basis-cash,Basis Cash,Algo-Stables,205665,1,1.0,Ethereum,1.0,,,,
+2026-10-18,world,world,Prediction Market,190230,1,1.0,Solana,1.0,,,,
+2026-10-18,dopple-finance,Dopple Finance,Algo-Stables,162982,1,1.0,Binance,1.0,,,,
+2026-10-18,pareto-credit,Pareto Credit,Uncollateralized Lending,145620,1,1.0,Ethereum,1.0,,,,
+2026-10-18,spot-cash,SPOT Cash,Algo-Stables,143901,1,1.0,Ethereum,1.0,,,,
+2026-10-18,use,USE,Algo-Stables,96095,1,1.0,Ergo,1.0,,,,
+2026-10-18,frax-fpi,Frax FPI,Algo-Stables,94349,1,1.0,Ethereum,1.0,,,,
+2026-10-18,finext-finance,Finext Finance,Algo-Stables,61111,1,1.0,Arbitrum,1.0,,,,
+2026-10-18,ordernchaos,OrderNChaos,Algo-Stables,60470,4,0.4353,Arbitrum,0.6011,,,,
+2026-10-18,nome-protocol,NOME Protocol,Algo-Stables,39144,1,1.0,Berachain,1.0,,,,
+2026-10-18,xusd-money,XUSD Money,Algo-Stables,28468,1,1.0,Ethereum,1.0,,,,
+2026-10-18,pulse-rate,Pulse Rate,Algo-Stables,25495,1,1.0,Pulse,1.0,,,,
+2026-10-18,b2b,B2B,Algo-Stables,16300,1,1.0,Binance,1.0,,,,
+2026-10-18,generic.money,Generic.Money,Algo-Stables,13999,1,1.0,Ethereum,1.0,,,,
+2026-10-18,pegasusdollar,Pegasusdollar,Algo-Stables,13970,1,1.0,Cronos,1.0,,,,
+2026-10-18,darkcrypto,DarkCrypto,Algo-Stables,13250,1,1.0,Cronos,1.0,,,,
+2026-10-18,blindex,Blindex,Algo-Stables,11740,1,1.0,RSK,1.0,,,,
+2026-10-18,tulip,Tulip,Algo-Stables,9274,1,1.0,Oasis,1.0,,,,
+2026-10-18,lumi-finance,Lumi Finance,Algo-Stables,103,1,1.0,Arbitrum,1.0,,,,
+2026-10-18,1inch,1INCH,DEX Aggregator,,,,,,0.1504,0.12,0.343,0.5276
+2026-10-18,aerodrome-finance,Aerodrome Finance,DEXs,,,,,,0.0359,0.0027,0.0538,0.1503
+2026-10-18,algorand,Algorand,Chains,,,,,,0.034,0.0006,0.0497,0.1279
+2026-10-18,aptos,Aptos,Chains,,,,,,0.0337,0.0003,0.0386,0.1149
+2026-10-18,avalanche-2,Avalanche,Chains,,,,,,0.0474,0.0146,0.1306,0.2462
+2026-10-18,bedrock-token,Bedrock,Anchor BTC,,,,,,0.2287,0.2021,0.2549,0.7444
+2026-10-18,binancecoin,BNB,Chains,,,,,,0.0361,0.0029,0.0521,0.1527
+2026-10-18,bitcoin,Bitcoin,Chains,,,,,,0.0347,0.0014,0.0485,0.1369
+2026-10-18,bitcoin-cash,Bitcoin Cash,Chains,,,,,,0.0365,0.0033,0.0668,0.1789
+2026-10-18,bitwise-uscc,Bitwise USCC,Basis Trading,,,,,,0.0815,0.0498,0.1461,0.3729
+2026-10-18,blackrock-buidl,BlackRock BUIDL,RWA tokenized treasuries,,,,,,0.0333,0.0,0.0352,0.1034
+2026-10-18,blockchain-capital,Blockchain Capital,RWA other,,,,,,0.0333,0.0,0.0337,0.101
+2026-10-18,cardano,Cardano,Chains,,,,,,0.0791,0.0474,0.1749,0.3911
+2026-10-18,celestia,Celestia,Data availability,,,,,,0.0348,0.0016,0.0568,0.1485
+2026-10-18,chainlink,Chainlink,Messaging bridges,,,,,,0.2349,0.2085,0.2437,0.728
+2026-10-18,compound-governance-token,Compound,Lending,,,,,,0.0344,0.0011,0.0483,0.1415
+2026-10-18,cosmos,Cosmos Hub,Chains,,,,,,0.0349,0.0016,0.0483,0.1412
+2026-10-18,curve-dao-token,Curve DAO,DEXs,,,,,,0.0571,0.0246,0.1038,0.2815
+2026-10-18,dash,Dash,Chains,,,,,,0.0369,0.0037,0.075,0.1732
+2026-10-18,doublezero,DoubleZero,Liquid Staking,,,,,,0.0426,0.0096,0.0545,0.1478
+2026-10-18,dydx-chain,,Derivatives,,,,,,0.0444,0.0114,0.0768,0.203
+2026-10-18,edgex,,Liquidity bridges,,,,,,0.044,0.011,0.0928,0.2268
+2026-10-18,ethena,Ethena,Basis Trading,,,,,,0.1983,0.1707,0.259,0.6827
+2026-10-18,ethereum,Ethereum,Chains,,,,,,0.0436,0.0106,0.0797,0.226
+2026-10-18,ethereum-classic,Ethereum Classic,Chains,,,,,,0.0477,0.0149,0.0705,0.2005
+2026-10-18,filecoin,Filecoin,Chains,,,,,,0.0414,0.0083,0.0924,0.2375
+2026-10-18,gmx,,Derivatives,,,,,,0.0501,0.0174,0.1005,0.2638
+2026-10-18,hastra,Hastra,RWA other,,,,,,0.0334,0.0,0.0371,0.1065
+2026-10-18,havven,Synthetix,Derivatives,,,,,,0.0619,0.0295,0.1288,0.3286
+2026-10-18,hedera-hashgraph,Hedera,Chains,,,,,,0.04,0.0069,0.1015,0.2026
+2026-10-18,hyperliquid,Hyperliquid,Liquidity bridges,,,,,,0.0367,0.0035,0.0592,0.1619
+2026-10-18,injective-protocol,Injective,Chains,,,,,,0.0338,0.0005,0.0483,0.1264
+2026-10-18,instadapp,Fluid,Lending,,,,,,0.0355,0.0022,0.0735,0.1601
+2026-10-18,internet-computer,Internet Computer,Chains,,,,,,0.035,0.0017,0.0489,0.1298
+2026-10-18,invesco-ustb,Invesco USTB,RWA tokenized treasuries,,,,,,0.0335,0.0002,0.0383,0.1133
+2026-10-18,jito-governance-token,Jito,Liquid Staking,,,,,,0.0354,0.0021,0.0467,0.1343
+2026-10-18,jupiter-exchange-solana,Jupiter,DEX Aggregator,,,,,,0.0356,0.0024,0.0528,0.1492
+2026-10-18,just,JUST,Lending,,,,,,0.0351,0.0019,0.0503,0.1384
+2026-10-18,layerzero,LayerZero,Liquidity bridges,,,,,,0.0365,0.0033,0.0517,0.153
+2026-10-18,lighter,Lighter,Liquidity bridges,,,,,,0.0394,0.0063,0.0707,0.1901
+2026-10-18,litecoin,Litecoin,Chains,,,,,,0.0341,0.0008,0.0471,0.1303
+2026-10-18,mantle-index-four-fund,Mantle Index Four Fund,RWA other,,,,,,0.0334,0.0001,0.035,0.1044
+2026-10-18,meta-2-2,,DEXs,,,,,,0.0472,0.0144,0.0986,0.2556
+2026-10-18,meteora,Meteora,DEXs,,,,,,0.0376,0.0045,0.0565,0.1619
+2026-10-18,morpho,Morpho,Lending,,,,,,0.0339,0.0006,0.0507,0.128
+2026-10-18,near,NEAR Protocol,Chains,,,,,,0.0508,0.0181,0.1153,0.2874
+2026-10-18,openeden-tbill,OpenEden TBILL,RWA tokenized treasuries,,,,,,0.0333,0.0,0.036,0.1042
+2026-10-18,orca,,DEXs,,,,,,0.0379,0.0047,0.0734,0.1686
+2026-10-18,pacifica-perps,Pacifica Perps,Derivatives,,,,,,0.0384,0.0052,0.0592,0.1592
+2026-10-18,pancakeswap-token,PancakeSwap,DEXs,,,,,,0.0366,0.0034,0.0551,0.1605
+2026-10-18,pendle,Pendle,Yield,,,,,,0.0698,0.0377,0.173,0.3901
+2026-10-18,polkadot,Polkadot,Chains,,,,,,0.0339,0.0006,0.0531,0.1238
+2026-10-18,pons,Pons,Launchpad,,,,,,0.0475,0.0146,0.0856,0.2377
+2026-10-18,pump-fun,Pump.fun,Launchpad,,,,,,0.0343,0.001,0.0463,0.1313
+2026-10-18,raydium,Raydium,DEXs,,,,,,0.0479,0.015,0.0911,0.2399
+2026-10-18,ripple,XRP,Chains,,,,,,0.0542,0.0215,0.128,0.2986
+2026-10-18,robinhood-chain,,Chains,,,,,,0.0547,0.0221,0.1014,0.2797
+2026-10-18,sei-network,Sei,Chains,,,,,,0.0498,0.0171,0.1009,0.271
+2026-10-18,solana,Solana,Chains,,,,,,0.0341,0.0008,0.0431,0.1222
+2026-10-18,spiko,Spiko,RWA tokenized treasuries,,,,,,0.283,0.2583,0.5177,0.6275
+2026-10-18,stellar,Stellar,Chains,,,,,,0.0338,0.0005,0.0434,0.1246
+2026-10-18,sui,Sui,Chains,,,,,,0.0429,0.0099,0.1019,0.2173
+2026-10-18,sun-token,Sun Token,DEXs,,,,,,0.0361,0.0028,0.0545,0.1565
+2026-10-18,sushi,,DEXs,,,,,,0.0398,0.0067,0.0734,0.191
+2026-10-18,syrup,Maple Finance,Lending,,,,,,0.0979,0.0668,0.1893,0.4505
+2026-10-18,tether-gold,Tether Gold,RWA other,,,,,,0.4668,0.4484,0.6318,0.9995
+2026-10-18,tezos,Tezos,Chains,,,,,,0.0341,0.0007,0.0493,0.1299
+2026-10-18,the-graph,The Graph,Developer Tools,,,,,,0.0694,0.0373,0.1502,0.3315
+2026-10-18,the-open-network,Toncoin,Chains,,,,,,0.0341,0.0007,0.0485,0.1337
+2026-10-18,thorchain,THORChain,Chains,,,,,,0.0496,0.0169,0.0879,0.2483
+2026-10-18,tron,TRON,Chains,,,,,,0.0356,0.0011,0.0436,0.1267
+2026-10-18,trust-wallet-token,Trust Wallet,Wallets,,,,,,0.0379,0.0048,0.0556,0.1604
+2026-10-18,wisdomtree,WisdomTree,RWA tokenized treasuries,,,,,,0.0334,0.0001,0.0352,0.104
+2026-10-18,worldcoin-wld,Worldcoin,Chains,,,,,,0.0361,0.0028,0.0687,0.1729
+2026-10-18,zcash,Zcash,Chains,,,,,,0.0504,0.0177,0.12,0.2827
