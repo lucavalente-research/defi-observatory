@@ -1,143 +1,93 @@
 date,protocol_id,protocol,sector,health_index,measures_available,change_7d,rank_deposit_growth,rank_fees_on_value,rank_transactions,rank_token_vs_btc,rank_data_cleanliness
-2026-10-18,tonstakers-lsd,Tonstakers LSD,Liquid Staking,90.0,3,0.0,88.7,98.3,,,82.9
-2026-10-18,pumpswap,PumpSwap,DEXs,87.8,4,-3.1,91.7,97.4,,81.0,81.2
-2026-10-18,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,Liquid Staking,87.7,3,4.3,85.5,94.8,,,82.9
-2026-10-18,sky-lending,Sky Lending,CDP,83.3,3,6.6,90.0,90.0,,,70.0
-2026-10-18,navi-lending,NAVI Lending,Lending,77.8,3,1.7,84.5,74.0,,,75.0
-2026-10-18,arcus-perps,Arcus Perps,Derivatives,77.1,3,-1.6,97.6,67.6,,,66.1
-2026-10-18,huma,Huma,RWA other,75.6,4,3.5,86.4,90.0,,64.3,61.9
-2026-10-18,near,NEAR Protocol,Chains,74.5,4,0.4,98.6,45.6,,99.1,54.8
-2026-10-18,near-bridge,NEAR Bridge,Canonical Bridge,73.3,3,-6.7,95.0,,,70.0,55.0
-2026-10-18,lighter-robinhood-perps,Lighter Robinhood Perps,Derivatives,72.7,4,11.3,92.9,61.8,,80.8,55.4
-2026-10-18,near-intents,NEAR Intents,Liquidity bridges,71.8,4,0.8,93.8,91.7,,96.2,5.4
-2026-10-18,aave,Aave,Lending,71.5,4,2.8,67.2,58.0,,65.2,95.6
-2026-10-18,sanctum-validator-lsts,Sanctum Validator LSTs,Liquid Staking,70.4,3,0.0,91.9,87.9,,,31.4
-2026-10-18,raydium-amm,Raydium AMM,DEXs,70.1,4,-5.8,47.2,55.3,,96.6,81.2
-2026-10-18,orca-dex,Orca DEX,DEXs,69.0,4,-10.2,80.6,76.3,,37.9,81.2
-2026-10-18,aave-horizon-rwa,Aave Horizon RWA,Lending,68.9,3,-3.2,43.1,,,65.2,98.5
-2026-10-18,kamino-lend,Kamino Lend,Lending,67.8,4,-0.4,53.4,82.0,,78.3,57.4
-2026-10-18,pancakeswap-amm-v3,PancakeSwap AMM V3,DEXs,67.4,4,10.8,97.2,71.1,,46.6,54.7
-2026-10-18,aave-v4,Aave V4,Lending,67.2,4,2.8,98.3,42.0,,65.2,63.2
-2026-10-18,ether.fi-stake,ether.fi Stake,Liquid Staking,67.1,4,0.9,82.3,36.2,,85.7,64.3
-2026-10-18,galaxy-curation,Galaxy Curation,Risk Curators,66.1,3,6.2,96.2,13.6,,,88.5
-2026-10-18,plume-vaults,Plume Vaults,RWA other,65.8,3,-6.0,77.3,70.0,,,50.0
-2026-10-18,starknet,Starknet,Chains,65.7,5,8.8,44.6,51.5,68.8,95.5,67.9
-2026-10-18,bitcoin,Bitcoin,Chains,64.9,3,1.7,58.1,54.4,,,82.1
-2026-10-18,robinhood-chain,,Chains,64.9,3,-2.9,68.9,66.2,,,59.5
-2026-10-18,aerodrome-slipstream,Aerodrome Slipstream,DEXs,64.5,4,3.1,86.1,81.6,,63.8,26.6
-2026-10-18,usdd,USDD,CDP,63.3,3,-6.7,70.0,30.0,,,90.0
-2026-10-18,avalanche-2,Avalanche,Chains,63.2,4,-0.7,87.8,42.6,,79.5,42.9
-2026-10-18,upshift,Upshift,Onchain Capital Allocator,62.9,3,6.1,31.8,75.0,,,81.8
-2026-10-18,armitage-by-wintermute,Armitage by Wintermute,Risk Curators,62.6,3,-2.7,73.1,95.5,,,19.2
-2026-10-18,jupiter-staked-sol,Jupiter Staked SOL,Liquid Staking,62.3,4,0.4,72.6,60.3,,75.0,41.4
-2026-10-18,veda,Veda,Onchain Capital Allocator,62.3,3,-3.0,50.0,55.0,,,81.8
-2026-10-18,falcon-finance-ff,Falcon Finance,Basis Trading,61.4,4,1.2,85.7,40.0,,64.3,55.6
-2026-10-18,uniswap-v4,Uniswap V4,DEXs,61.4,3,-8.4,,86.8,,74.1,23.4
-2026-10-18,unit,Unit,Liquidity bridges,61.2,3,-0.6,89.6,58.3,,,35.7
-2026-10-18,layerzero-v2,LayerZero V2,Liquidity bridges,61.0,4,-1.0,97.9,41.7,,84.6,19.6
-2026-10-18,hyperliquid-bridge,Hyperliquid Bridge,Liquidity bridges,60.8,3,2.0,70.8,,,38.5,73.2
-2026-10-18,euler-v2,Euler V2,Lending,60.2,3,-0.1,12.1,98.0,,,70.6
-2026-10-18,marinade-liquid-staking,Marinade Liquid Staking,Liquid Staking,60.0,3,-1.0,24.2,91.4,,,64.3
-2026-10-18,extended-perps,Extended Perps,Derivatives,59.9,3,-12.4,50.0,44.1,,,85.7
-2026-10-18,jupiter-perpetual-exchange,Jupiter Perpetual Exchange,Derivatives,58.7,4,0.0,40.5,32.4,,88.5,73.2
-2026-10-18,tydro,Tydro,Lending,58.5,3,-23.9,22.4,62.0,,,91.2
-2026-10-18,aster-usdf,Aster USDF,Basis Trading,58.2,3,1.5,35.7,,,50.0,88.9
-2026-10-18,gmx-evm,GMX EVM,Derivatives,58.2,4,-1.3,73.8,20.6,,65.4,73.2
-2026-10-18,etherfi-borrowing-market,EtherFi Borrowing Market,Lending,57.4,4,2.0,87.9,2.0,,54.3,85.3
-2026-10-18,jito-liquid-staking,Jito Liquid Staking,Liquid Staking,57.1,4,-2.7,79.0,63.8,,21.4,64.3
-2026-10-18,avant-avusd,Avant avUSD,Onchain Capital Allocator,55.9,3,-3.0,22.7,95.0,,,50.0
-2026-10-18,morpho-blue,Morpho Blue,Lending,55.8,4,0.6,81.0,50.0,,21.7,70.6
-2026-10-18,jupiter-lend,Jupiter Lend,Lending,55.5,4,-1.9,70.7,94.0,,50.0,7.4
-2026-10-18,lighter-bridge,Lighter Bridge,Liquidity bridges,55.5,3,-5.6,39.6,,,53.8,73.2
-2026-10-18,merlins-seal,Merlins Seal,Liquidity bridges,55.2,3,-17.9,27.1,,,65.4,73.2
-2026-10-18,spark-liquidity-layer,Spark Liquidity Layer,Onchain Capital Allocator,55.0,3,6.1,95.5,65.0,,,4.5
-2026-10-18,bybit-staked-sol,Bybit Staked SOL,Liquid Staking,54.8,3,1.2,95.2,53.4,,,15.7
-2026-10-18,portal,Portal,Liquidity bridges,54.5,4,-0.8,77.1,25.0,,73.1,42.9
-2026-10-18,meteora-dlmm,Meteora DLMM,DEXs,54.4,4,1.3,25.0,92.1,,89.7,10.9
-2026-10-18,aerodrome-v1,Aerodrome V1,DEXs,54.2,4,3.3,69.4,44.7,,63.8,39.1
-2026-10-18,grove-finance,Grove Finance,Onchain Capital Allocator,54.1,3,24.0,86.4,35.0,,,40.9
-2026-10-18,uniswap,Uniswap,DEXs,54.1,4,5.8,75.0,65.8,,74.1,1.6
-2026-10-18,steakhouse-financial,Steakhouse Financial,Risk Curators,54.0,3,-5.7,11.5,77.3,,,73.1
-2026-10-18,binance-staked-sol,Binance Staked SOL,Liquid Staking,53.8,3,9.6,75.8,74.1,,,11.4
-2026-10-18,rockawayx,RockawayX,Risk Curators,53.5,3,-8.4,26.9,68.2,,,65.4
-2026-10-18,uniswap-v2,Uniswap V2,DEXs,53.5,4,-2.1,41.7,34.2,,74.1,64.1
-2026-10-18,sentora-curator,Sentora Curator,Risk Curators,53.0,3,-1.0,88.5,59.1,,,11.5
-2026-10-18,sky-money,Sky Money,Risk Curators,52.1,3,1.1,34.6,40.9,,,80.8
-2026-10-18,cap,cap,Lending,52.0,4,2.2,1.7,66.0,,97.8,42.6
-2026-10-18,benqi-staked-avax,Benqi Staked Avax,Liquid Staking,51.8,4,-4.0,59.7,46.6,,96.4,4.3
-2026-10-18,falcon-finance,Falcon USD,Basis Trading,50.7,4,1.3,85.7,40.0,,21.4,55.6
-2026-10-18,benqi-lending,Benqi Lending,Lending,50.6,4,5.4,60.3,34.0,,84.8,23.5
-2026-10-18,lagoon,Lagoon,Onchain Capital Allocator,50.5,3,-3.0,77.3,15.0,,,59.1
-2026-10-18,sparklend,SparkLend,Lending,50.2,3,-10.8,39.7,30.0,,,80.9
-2026-10-18,rhea-lend,Rhea Lend,Lending,50.0,3,4.1,50.0,22.0,,,77.9
-2026-10-18,phantom-sol,Phantom SOL,Liquid Staking,49.2,3,15.3,53.2,67.2,,,27.1
-2026-10-18,suilend,Suilend,Lending,49.0,3,0.1,91.4,54.0,,,1.5
-2026-10-18,drift-staked-sol,Drift Staked SOL,Liquid Staking,48.7,3,4.4,40.3,84.5,,,21.4
-2026-10-18,solvbtc,SolvBTC,Liquidity bridges,48.7,3,1.6,35.4,75.0,,,35.7
-2026-10-18,helius-staked-sol,Helius Staked SOL,Liquid Staking,48.5,3,-7.4,56.5,77.6,,,11.4
-2026-10-18,arbitrum,Arbitrum,Chains,48.4,5,-3.9,52.7,30.9,31.2,90.2,36.9
-2026-10-18,fluid-lending,Fluid Lending,Lending,48.3,3,-11.4,15.5,,,91.3,38.2
-2026-10-18,compound-v2,Compound V2,Lending,48.2,4,1.5,56.9,18.0,,32.6,85.3
-2026-10-18,kpk,KPK,Risk Curators,47.7,3,-2.4,80.8,4.5,,,57.7
-2026-10-18,lido,Lido,Liquid Staking,47.6,4,-8.4,45.2,31.0,,50.0,64.3
-2026-10-18,lido-dao,Lido DAO,Liquid Staking,47.6,4,-8.4,45.2,31.0,,50.0,64.3
-2026-10-18,sanctum-infinity,Sanctum Infinity,DEXs,46.9,3,7.4,52.8,39.5,,,48.4
-2026-10-18,k3-capital,K3 Capital,Risk Curators,46.7,3,2.6,3.8,86.4,,,50.0
-2026-10-18,xdai-stake-bridge,xDAI Stake Bridge,Canonical Bridge,46.7,3,0.0,55.0,,,30.0,55.0
-2026-10-18,solana,Solana,Chains,46.1,4,-3.8,28.4,75.0,,59.8,21.4
-2026-10-18,optimism,Optimism,Chains,45.4,5,5.7,39.2,13.2,81.2,63.4,29.8
-2026-10-18,jpool,JPool,Liquid Staking,45.3,3,1.0,30.6,81.0,,,24.3
-2026-10-18,the-vault-liquid-staking,The Vault Liquid Staking,Liquid Staking,45.3,3,-3.2,33.9,70.7,,,31.4
-2026-10-18,stakewise-v3,StakeWise V3,Liquid Staking,45.2,3,6.4,66.1,5.2,,,64.3
-2026-10-18,liquid-collective,Liquid Collective,Liquid Staking,44.7,3,0.0,8.1,43.1,,,82.9
-2026-10-18,hyperlend-pooled,HyperLend Pooled,Lending,44.4,3,1.9,5.2,78.0,,,50.0
-2026-10-18,cardano,Cardano,Chains,43.9,4,-9.6,66.2,57.4,,50.9,1.2
-2026-10-18,frax-ether,Frax Ether,Liquid Staking,43.3,3,-3.2,50.0,15.5,,,64.3
-2026-10-18,polymarket-international,Polymarket International,Prediction Market,42.5,3,3.6,65.9,55.0,,,6.5
-2026-10-18,clearstar,Clearstar,Risk Curators,42.3,3,-0.8,42.3,50.0,,,34.6
-2026-10-18,sunswap-v3,SUNSwap V3,DEXs,41.6,4,8.5,63.9,23.7,,6.9,71.9
-2026-10-18,binance-staked-eth,Binance staked ETH,Liquid Staking,41.5,3,2.1,62.9,25.9,,,35.7
-2026-10-18,hyperithm,Hyperithm,Risk Curators,41.4,3,-1.2,50.0,31.8,,,42.3
-2026-10-18,tron,TRON,Chains,41.2,4,5.1,55.4,72.1,,9.8,27.4
-2026-10-18,binancecoin,BNB,Chains,40.9,4,9.6,50.0,60.3,,40.2,13.1
-2026-10-18,maple,Maple,Lending,40.9,4,7.2,46.6,70.0,,8.7,38.2
-2026-10-18,hyperliquid-spot-orderbook,Hyperliquid Spot Orderbook,DEXs,40.7,4,-11.8,19.4,50.0,,29.3,64.1
-2026-10-18,compound-v3,Compound V3,Lending,40.4,4,-4.7,32.8,46.0,,32.6,50.0
-2026-10-18,quickswap-dex,Quickswap Dex,DEXs,40.0,4,-0.6,2.8,60.5,,15.5,81.2
-2026-10-18,justlend-v1,JustLend V1,Lending,39.8,4,6.9,77.6,10.0,,43.5,27.9
-2026-10-18,solstice,Solstice,Basis Trading,39.1,4,3.1,7.1,70.0,,7.1,72.2
-2026-10-18,sui,Sui,Chains,39.1,4,-6.9,60.8,25.0,,49.1,21.4
-2026-10-18,sthype,stHYPE,Liquid Staking,38.9,3,1.2,11.3,22.4,,,82.9
-2026-10-18,dydx-v4,dYdX V4,Derivatives,38.5,3,1.6,64.3,,,19.2,32.1
-2026-10-18,ethena-usde,Ethena USDe,Basis Trading,38.2,4,-4.9,21.4,90.0,,35.7,5.6
-2026-10-18,aave-v2,Aave V2,Lending,38.1,4,2.5,36.2,38.0,,65.2,13.2
-2026-10-18,ether.fi-liquid,ether.fi Liquid,Onchain Capital Allocator,38.0,3,6.0,40.9,5.0,,,68.2
-2026-10-18,stader,Stader,Liquid Staking,37.8,4,4.5,17.7,8.6,,60.7,64.3
-2026-10-18,lista-lending,Lista Lending,Lending,37.7,3,6.0,94.8,14.0,,,4.4
-2026-10-18,curve-dex,Curve DEX,DEXs,37.5,4,7.2,36.1,28.9,,55.2,29.7
-2026-10-18,ember-protocol,Ember Protocol,Onchain Capital Allocator,37.4,3,-15.2,4.5,85.0,,,22.7
-2026-10-18,venus-core-pool,Venus Core Pool,Lending,37.1,3,-1.6,19.0,26.0,,,66.2
-2026-10-18,cooler-loans,Cooler Loans,Lending,37.0,3,4.7,74.1,6.0,,,30.9
-2026-10-18,curvance,Curvance,Lending,36.9,3,-0.2,8.6,86.0,,,16.2
-2026-10-18,liquity-v1,Liquity V1,CDP,36.7,3,0.0,50.0,10.0,,,50.0
-2026-10-18,lista-cdp,Lista CDP,CDP,36.7,3,0.0,10.0,70.0,,,30.0
-2026-10-18,polygon-ecosystem-token,POL (ex-MATIC),Chains,36.4,4,0.1,9.5,69.1,,20.5,46.4
-2026-10-18,fluid-dex,Fluid DEX,DEXs,35.7,4,3.8,8.3,7.9,,84.5,42.2
-2026-10-18,dolomite,Dolomite,Lending,35.4,4,-14.4,25.9,90.0,,15.2,10.3
-2026-10-18,rocket-pool,Rocket Pool,Liquid Staking,34.5,4,-7.7,37.1,19.0,,32.1,50.0
-2026-10-18,aster-bridge,Aster Bridge,Liquidity bridges,34.2,3,1.2,6.2,,,23.1,73.2
-2026-10-18,bitfi-basis,BitFi Basis,Basis Trading,34.0,3,15.7,64.3,10.0,,,27.8
-2026-10-18,wbtc,WBTC,Liquidity bridges,33.7,3,-0.2,50.0,8.3,,,42.9
-2026-10-18,ethereum,Ethereum,Chains,33.3,4,-0.9,31.1,22.1,,45.5,34.5
-2026-10-18,sunswap-v2,SUNSwap V2,DEXs,33.0,4,7.3,58.3,2.6,,6.9,64.1
-2026-10-18,concrete,Concrete,Onchain Capital Allocator,32.6,3,6.1,59.1,25.0,,,13.6
-2026-10-18,mantle,Mantle,Chains,31.7,5,6.7,47.3,10.3,56.2,36.6,8.3
-2026-10-18,aera-v3,Aera V3,Onchain Capital Allocator,30.1,3,-24.0,13.6,45.0,,,31.8
-2026-10-18,b2-buzz,B2 Buzz,Canonical Bridge,30.0,3,3.3,25.0,,,10.0,55.0
-2026-10-18,crvusd,crvUSD,CDP,30.0,3,0.0,30.0,50.0,,,10.0
-2026-10-18,opentrade,OpenTrade,RWA other,29.8,3,0.0,4.5,30.0,,,54.8
-2026-10-18,meth-protocol,mETH Protocol,Liquid Staking,28.9,4,-2.4,21.0,39.7,,10.7,44.3
-2026-10-18,pancakeswap-amm,PancakeSwap AMM,DEXs,28.7,4,5.2,13.9,18.4,,46.6,35.9
-2026-10-18,lista-liquid-staking,Lista Liquid Staking,Liquid Staking,26.8,3,-7.6,14.5,1.7,,,64.3
-2026-10-18,kinetiq-khype,Kinetiq kHYPE,Liquid Staking,18.5,3,1.1,4.8,12.1,,,38.6
-2026-10-18,stellar,Stellar,Chains,17.2,4,-5.4,20.3,19.1,,4.5,25.0
+2026-10-19,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,Liquid Staking,88.2,3,3.8,84.1,94.8,,,85.7
+2026-10-19,huma,Huma,RWA other,83.6,3,5.6,,90.0,,75.0,85.7
+2026-10-19,arcus-perps,Arcus Perps,Derivatives,82.4,3,1.8,96.9,73.5,,,76.8
+2026-10-19,lighter-robinhood-perps,Lighter Robinhood Perps,Derivatives,75.9,3,2.0,90.6,67.6,,,69.6
+2026-10-19,starknet,Starknet,Chains,72.8,4,13.5,59.7,,68.8,92.6,70.2
+2026-10-19,blend-pools-v2,Blend Pools V2,Lending,72.7,3,15.6,65.9,68.5,,,83.8
+2026-10-19,aave-horizon-rwa,Aave Horizon RWA,Lending,68.8,3,3.6,52.3,,,55.6,98.5
+2026-10-19,near,NEAR Protocol,Chains,68.1,3,-7.7,,43.5,,98.9,61.9
+2026-10-19,robinhood-chain,,Chains,66.9,3,3.8,87.5,59.7,,,53.6
+2026-10-19,uniswap-v4,Uniswap V4,DEXs,66.8,4,1.2,93.8,86.8,,68.8,17.7
+2026-10-19,ether.fi-stake,ether.fi Stake,Liquid Staking,66.5,4,-3.6,75.0,36.2,,81.8,72.9
+2026-10-19,extended-perps,Extended Perps,Derivatives,64.7,3,-6.0,53.1,50.0,,,91.1
+2026-10-19,falcon-finance-ff,Falcon Finance,Basis Trading,64.6,3,4.4,80.0,,,58.3,55.6
+2026-10-19,near-intents,NEAR Intents,Liquidity bridges,64.2,3,-6.8,,92.9,,94.4,5.4
+2026-10-19,aave,Aave,Lending,63.6,4,-7.7,38.6,64.8,,55.6,95.6
+2026-10-19,aerodrome-slipstream,Aerodrome Slipstream,DEXs,63.4,3,3.4,81.2,81.6,,,27.4
+2026-10-19,aave-v4,Aave V4,Lending,63.1,4,-0.6,97.7,38.9,,55.6,60.3
+2026-10-19,bitcoin,Bitcoin,Chains,62.9,3,-1.0,54.2,50.0,,,84.5
+2026-10-19,armitage-by-wintermute,Armitage by Wintermute,Risk Curators,62.2,3,12.5,64.3,95.5,,,26.9
+2026-10-19,avalanche-2,Avalanche,Chains,62.0,4,-2.7,81.9,40.3,,84.0,41.7
+2026-10-19,marinade-liquid-staking,Marinade Liquid Staking,Liquid Staking,61.6,3,-1.2,20.5,91.4,,,72.9
+2026-10-19,layerzero-v2,LayerZero V2,Liquidity bridges,61.1,4,-0.9,96.9,50.0,,77.8,19.6
+2026-10-19,jupiter-perpetual-exchange,Jupiter Perpetual Exchange,Derivatives,60.6,4,2.1,40.6,32.4,,87.5,82.1
+2026-10-19,euler-v2,Euler V2,Lending,59.8,3,1.2,15.9,94.4,,,69.1
+2026-10-19,uniswap-v2,Uniswap V2,DEXs,59.1,3,8.3,,34.2,,68.8,74.2
+2026-10-19,jupiter-staked-sol,Jupiter Staked SOL,Liquid Staking,59.0,4,3.1,65.9,60.3,,68.2,41.4
+2026-10-19,avant-avusd,Avant avUSD,Onchain Capital Allocator,58.7,3,-0.2,31.2,95.0,,,50.0
+2026-10-19,gmx-evm,GMX EVM,Derivatives,58.6,4,6.6,78.1,26.5,,70.8,58.9
+2026-10-19,grove-finance,Grove Finance,Onchain Capital Allocator,56.6,3,26.5,93.8,35.0,,,40.9
+2026-10-19,optimism,Optimism,Chains,56.5,4,13.5,37.5,,93.8,64.9,29.8
+2026-10-19,jito-liquid-staking,Jito Liquid Staking,Liquid Staking,56.4,4,-1.2,70.5,63.8,,18.2,72.9
+2026-10-19,etherfi-borrowing-market,EtherFi Borrowing Market,Lending,55.8,4,-6.5,88.6,1.9,,41.7,91.2
+2026-10-19,hyperliquid-bridge,Hyperliquid Bridge,Liquidity bridges,55.6,3,-5.8,34.4,,,55.6,76.8
+2026-10-19,aster-usdf,Aster USDF,Basis Trading,55.4,3,-3.1,30.0,,,41.7,94.4
+2026-10-19,meth-protocol,mETH Protocol,Liquid Staking,55.4,3,26.6,79.5,39.7,,,47.1
+2026-10-19,benqi-lending,Benqi Lending,Lending,53.0,4,5.6,75.0,31.5,,80.6,25.0
+2026-10-19,bybit-staked-sol,Bybit Staked SOL,Liquid Staking,52.6,3,-1.0,88.6,53.4,,,15.7
+2026-10-19,lagoon,Lagoon,Onchain Capital Allocator,51.8,3,-1.7,81.2,15.0,,,59.1
+2026-10-19,fluid-lending,Fluid Lending,Lending,51.5,4,2.8,25.0,90.7,,88.9,1.5
+2026-10-19,uniswap,Uniswap,DEXs,51.2,4,2.7,68.8,65.8,,68.8,1.6
+2026-10-19,benqi-staked-avax,Benqi Staked Avax,Liquid Staking,50.8,4,-5.0,56.8,46.6,,95.5,4.3
+2026-10-19,cap,cap,Lending,50.5,4,1.0,2.3,61.1,,97.2,41.2
+2026-10-19,k3-capital,K3 Capital,Risk Curators,50.4,3,0.9,7.1,86.4,,,57.7
+2026-10-19,kpk,KPK,Risk Curators,49.5,3,-3.2,78.6,4.5,,,65.4
+2026-10-19,binance-staked-sol,Binance Staked SOL,Liquid Staking,49.0,3,8.0,61.4,74.1,,,11.4
+2026-10-19,arbitrum,Arbitrum,Chains,48.7,4,-0.9,48.6,,18.8,90.4,36.9
+2026-10-19,falcon-finance,Falcon USD,Basis Trading,48.0,3,-1.4,80.0,,,8.3,55.6
+2026-10-19,galaxy-curation,Galaxy Curation,Risk Curators,48.0,3,8.4,92.9,31.8,,,19.2
+2026-10-19,solana,Solana,Chains,47.4,4,-2.5,26.4,72.6,,69.1,21.4
+2026-10-19,lido,Lido,Liquid Staking,46.5,4,-10.9,36.4,31.0,,45.5,72.9
+2026-10-19,lido-dao,Lido DAO,Liquid Staking,46.5,4,-10.9,36.4,31.0,,45.5,72.9
+2026-10-19,dydx-v4,dYdX V4,Derivatives,45.7,4,-2.4,59.4,20.6,,20.8,82.1
+2026-10-19,helius-staked-sol,Helius Staked SOL,Liquid Staking,45.6,3,-10.3,47.7,77.6,,,11.4
+2026-10-19,liquid-collective,Liquid Collective,Liquid Staking,45.2,3,-0.4,6.8,43.1,,,85.7
+2026-10-19,drift-staked-sol,Drift Staked SOL,Liquid Staking,45.1,3,-1.4,29.5,84.5,,,21.4
+2026-10-19,ether.fi-liquid,ether.fi Liquid,Onchain Capital Allocator,45.1,3,7.1,43.8,5.0,,,86.4
+2026-10-19,binancecoin,BNB,Chains,44.9,4,14.8,65.3,56.5,,45.7,11.9
+2026-10-19,maple,Maple,Lending,44.8,3,6.9,43.2,50.0,,,41.2
+2026-10-19,compound-v2,Compound V2,Lending,44.7,4,-3.5,56.8,16.7,,13.9,91.2
+2026-10-19,aave-v2,Aave V2,Lending,44.4,4,8.1,70.5,35.2,,55.6,16.2
+2026-10-19,hyperliquid-spot-orderbook,Hyperliquid Spot Orderbook,DEXs,44.1,4,-15.9,18.8,50.0,,18.8,88.7
+2026-10-19,frax-ether,Frax Ether,Liquid Staking,43.9,3,-6.5,43.2,15.5,,,72.9
+2026-10-19,jpool,JPool,Liquid Staking,43.4,3,-2.0,25.0,81.0,,,24.3
+2026-10-19,cardano,Cardano,Chains,43.3,4,-9.3,62.5,53.2,,56.4,1.2
+2026-10-19,hyperlend-pooled,HyperLend Pooled,Lending,43.3,3,0.5,6.8,75.9,,,47.1
+2026-10-19,aerodrome-v1,Aerodrome V1,DEXs,42.9,3,-5.6,43.8,44.7,,,40.3
+2026-10-19,clearstar,Clearstar,Risk Curators,42.7,3,-5.5,35.7,50.0,,,42.3
+2026-10-19,compound-v3,Compound V3,Lending,42.4,4,0.4,61.4,42.6,,13.9,51.5
+2026-10-19,ember-protocol,Ember Protocol,Onchain Capital Allocator,41.0,3,-14.6,6.2,85.0,,,31.8
+2026-10-19,sui,Sui,Chains,40.0,4,-4.2,56.9,27.4,,54.3,21.4
+2026-10-19,aster-bridge,Aster Bridge,Liquidity bridges,39.8,3,8.4,9.4,,,33.3,76.8
+2026-10-19,tron,TRON,Chains,39.5,4,6.7,51.4,69.4,,9.6,27.4
+2026-10-19,jupiter-lend,Jupiter Lend,Lending,39.2,4,-14.2,20.5,87.0,,36.1,13.2
+2026-10-19,cooler-loans,Cooler Loans,Lending,38.7,3,7.6,79.5,5.6,,,30.9
+2026-10-19,curvance,Curvance,Lending,38.4,3,-1.2,11.4,83.3,,,20.6
+2026-10-19,binance-staked-eth,Binance staked ETH,Liquid Staking,38.0,3,-1.4,52.3,25.9,,,35.7
+2026-10-19,polygon-ecosystem-token,POL (ex-MATIC),Chains,38.0,4,1.4,12.5,66.1,,22.3,51.2
+2026-10-19,fluid-dex,Fluid DEX,DEXs,37.9,4,3.4,6.2,7.9,,93.8,43.5
+2026-10-19,lista-lending,Lista Lending,Lending,37.9,3,5.2,93.2,13.0,,,7.4
+2026-10-19,justlend-v1,JustLend V1,Lending,37.3,4,5.3,84.1,9.3,,27.8,27.9
+2026-10-19,mantle,Mantle,Chains,36.2,5,13.4,68.1,11.3,56.2,37.2,8.3
+2026-10-19,dolomite,Dolomite,Lending,35.2,4,-18.9,29.5,98.1,,2.8,10.3
+2026-10-19,curve-dex,Curve DEX,DEXs,32.0,4,-0.9,31.2,28.9,,37.5,30.6
+2026-10-19,concrete,Concrete,Onchain Capital Allocator,31.6,3,5.1,56.2,25.0,,,13.6
+2026-10-19,hyperithm,Hyperithm,Risk Curators,31.4,3,-19.1,21.4,22.7,,,50.0
+2026-10-19,ethereum,Ethereum,Chains,30.7,4,-3.3,23.6,21.0,,43.6,34.5
+2026-10-19,aera-v3,Aera V3,Onchain Capital Allocator,28.8,3,-22.3,18.8,45.0,,,22.7
+2026-10-19,lista-liquid-staking,Lista Liquid Staking,Liquid Staking,28.7,3,-9.6,11.4,1.7,,,72.9
+2026-10-19,stellar,Stellar,Chains,20.0,4,-5.8,31.9,17.7,,5.3,25.0
+2026-10-19,kinetiq-khype,Kinetiq kHYPE,Liquid Staking,17.7,3,-1.9,2.3,12.1,,,38.6
+2026-10-19,ethena-usde,Ethena USDe,Basis Trading,17.2,3,-28.7,10.0,,,25.0,16.7
+2026-10-19,coinbase-bridge,Coinbase Bridge,Liquidity bridges,12.6,3,5.2,21.9,7.1,,,8.9
